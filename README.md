@@ -19,7 +19,7 @@
 - Listado del grupo con una breve descripción de cada uno
 - Fenuquietto López, Félix 
 - Gadea, Federico segundo
-- Saieg, Abraham
+- Saieg, Abraham: 20 años, trabajo de vendiendo indumentaria, me encantan los autos
 - Troncoso, Lucas andres: 37 años, trabajo en el sector de finanzas de una multinacional, analista de sist., tengo un gato.
 - Ventura Dubois, Camila
 
