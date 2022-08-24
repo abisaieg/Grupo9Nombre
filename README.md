@@ -26,6 +26,6 @@
 
 - Link del tablero de trabajo en donde se encuentran trabajando
 - https://github.com/abisaieg/Grupo9Nombre
-- 
+- https://trello.com/b/57Ou0Mgi/grupo-9-dh
 
 
