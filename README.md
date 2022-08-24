@@ -5,7 +5,7 @@
 
 
 - Publico objetivo
-- toda persona que desee asisitir a un evento recreativo
+- toda persona que quiera comprar un ticket para evento recreativo
 
 
 - Listado de 5 páginas referentes en las que se basa su proyecto
