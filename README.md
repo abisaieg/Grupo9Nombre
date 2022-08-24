@@ -21,7 +21,7 @@
 - Gadea, Federico segundo
 - Saieg, Abraham: 20 años, trabajo de vendiendo indumentaria, me encantan los autos
 - Troncoso, Lucas andres: 37 años, trabajo en el sector de finanzas de una multinacional, analista de sist., tengo un gato.
-- Ventura Dubois, Camila
+- Ventura Dubois, Camila: 25 años, nivel 4 en inglés, conocimientos básicos en Photoshop, Vegas Pro, After Effects, entre otros. Aficionada al mundo de los videojuegos.
 
 
 - Link del tablero de trabajo en donde se encuentran trabajando
