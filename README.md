@@ -25,7 +25,7 @@
 
 
 - Link del tablero de trabajo en donde se encuentran trabajando
-- https://www.figma.com/files/recent?fuid=1144060241251422045
+- https://github.com/abisaieg/Grupo9Nombre
 - 
 
 
