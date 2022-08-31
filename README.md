@@ -1,4 +1,4 @@
-# repositorioGrupo9-
+# Grupo9prevento-
 
 - Temática y descripción del sitio 
 - Sistema web para la compra de boletos digitales para eventos recreativos tales como recitales, teatro, deportes, etc.
