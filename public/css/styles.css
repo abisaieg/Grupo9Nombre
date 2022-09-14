@@ -1,3 +1,7 @@
 #buscar{
-    display: block !important; 
+width: 50%;
+margin: auto;
+display: flex;
 }
+
+
