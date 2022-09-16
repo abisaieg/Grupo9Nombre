@@ -1,0 +1,7 @@
+Letras de parrafos en header y footer : #000000
+Letras de parrafos en body : #ffffff
+Titulos y subtitulos: #f7c143 
+Fondo del body: #000000 
+Header y footer:  #f7c143 
+
+
