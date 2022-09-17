@@ -1,12 +1,14 @@
-*{
-    box-sizing: border-box;
-}
 body {
     background-color: black;
 }
 
+header {
+    background-color: #f7c143;
+    padding-bottom: 1%;
+}
+
 #footdiv {
-    padding-top: 1%;
+    padding: 3%;
     background-color: #f7c143 ;
     text-align: center;
     color: black;
@@ -16,6 +18,19 @@ body {
     background-color: #000000 ;
     color: #ffffff ;
     text-align: center;
+    margin: auto;
+    padding-top: 0.5%;
+}
+
+#buscar {
+    width: 50%;
+    margin: auto;
+}
+
+.logo {
+    width: 3%;
+    margin-left:1%;
+    margin-right: 1%;
 }
 
 .navbar {
