@@ -40,7 +40,9 @@ text-align: right;
 .card {
     display:inline-block;
     margin: 2%;
-    background: linear-gradient(90deg, hsla(42, 92%, 62%, 1) 0%, hsla(42, 66%, 28%, 1) 100%);
+    background: linear-gradient(135deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 18%, 1) 86%, hsla(0, 0%, 33%, 1) 100%);
+    color: white;
+    border-color: white;
     
 }
 
@@ -53,9 +55,10 @@ text-align: right;
     margin-left: auto;
 }
 
-.btn {
+.card-btn {
     background-color: #332608;
     border-color: #f7c143;
+    color: white;
 }
 
 .btn:hover {
@@ -63,9 +66,6 @@ text-align: right;
     border-color: #ffd675;
 }
 
-.carousel-control-next , .carousel-control-prev , .carousel-control-prev-icon{
-    color: #f7c143 !important;
-    text-transform: uppercase;
-    font-size: 200%;
-    text-decoration: none;
+h5.card-title {
+    color: #f7c143;
 }
