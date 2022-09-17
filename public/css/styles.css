@@ -36,3 +36,12 @@ text-align: right;
     width: 50%;
     margin: auto;
 }
+
+.tarjetas {
+    display: flex;
+    width: 200px;
+    background-color: gray;
+    border-radius: 3%;   
+    margin: 1%;
+    padding: 1%;
+}
