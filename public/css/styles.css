@@ -36,29 +36,3 @@ text-align: right;
     width: 50%;
     margin: auto;
 }
-
-.card {
-    display:inline-block;
-    margin: 2%;
-    background: linear-gradient(90deg, hsla(42, 92%, 62%, 1) 0%, hsla(42, 66%, 28%, 1) 100%);
-    
-}
-
-.tarj-container{
-    width: 80%;
-    margin: auto;
-}
-
-.tarj-align {
-    margin-left: auto;
-}
-
-.btn {
-    background-color: #332608;
-    border-color: #f7c143;
-}
-
-.btn:hover {
-    background-color: #614f27;
-    border-color: #ffd675;
-}
