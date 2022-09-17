@@ -74,3 +74,14 @@ h5.card-title {
     width: 10%;
 }
 
+.carousel-control-next , .carousel-control-prev {
+    text-decoration: none !important;
+    font-size: 150%;
+}
+
+.carousel {
+    width: 98%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
