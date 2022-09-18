@@ -5,6 +5,7 @@ body {
 header {
     background-color: #f7c143;
     padding-bottom: 1%;
+    margin-bottom: 5%;
 }
 
 #footdiv {
@@ -12,6 +13,7 @@ header {
     background-color: #f7c143 ;
     text-align: center;
     color: black;
+    margin-top: 10%;
 }
 
 #copycontainer {
@@ -153,7 +155,7 @@ hr {
 }
 
 .img-der {
-    background-image: url("../images/tarj-ej.jpg");
+    background-image: url("../images/crea-tu-cuenta.jpg");
     background-size: cover;
 }
 
