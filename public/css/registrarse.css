@@ -3,17 +3,18 @@ body {
 }
 
 header {
-    background-color: #f7c143;
+    background: linear-gradient(90deg, hsla(42, 92%, 62%, 1) 0%, hsla(42, 68%, 46%, 1) 100%);
     padding-bottom: 1%;
     margin-bottom: 5%;
 }
 
 #footdiv {
     padding: 3%;
-    background-color: #f7c143 ;
+    background: linear-gradient(90deg, hsla(42, 92%, 62%, 1) 0%, hsla(42, 68%, 46%, 1) 100%);
     text-align: center;
     color: black;
     margin-top: 10%;
+    font-weight: 500;
 }
 
 #copycontainer {
@@ -35,7 +36,8 @@ header {
 }
 
 .navbar {
-    background-color: #f7c143;
+    background-color: none !;
+    font-weight: 500;
 }
 
 h1 {
