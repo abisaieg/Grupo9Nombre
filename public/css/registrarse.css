@@ -73,11 +73,43 @@ label{
     box-shadow: none !important;
 }
 
+.form-control:focus {
+    box-shadow: none !important;
+}
+ 
 .divform {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 80%;
 }
+
+.formuinput {
+    background-color: #00000000 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0% !important;
+    color: white;
+    text-align: center;
+}
+
+.formuinput::placeholder {
+    color: rgb(170, 170, 170);
+    text-align: center; 
+}
+
+.formuinput:focus {
+    color: rgb(170, 170, 170);
+    text-align: center; 
+}
+
+
+hr {
+    color: #f7c143;
+    margin-bottom: 8%;
+}
+
 
 .container {
     margin-top: 2%;
@@ -106,6 +138,13 @@ label{
     background-color:#6e4d00;
     border: none;
     box-shadow: none !important;
+}
+
+.btn-formu {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-control:focus {
