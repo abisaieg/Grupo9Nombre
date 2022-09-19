@@ -12,6 +12,7 @@ header {
     background-color: #f7c143 ;
     text-align: center;
     color: black;
+    font-weight: 500;
 }
 
 #copycontainer {
@@ -23,6 +24,7 @@ header {
 
 .navbar {
     background-color: #f7c143;
+    font-weight: 500;
 }
 
 #buscar {
