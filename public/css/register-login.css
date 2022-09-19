@@ -93,10 +93,16 @@ hr {
    border-color: #f7c143;
 }
 
-.img-der {
+.img-reg {
     background-image: url("../images/crea-tu-cuenta.jpg");
     background-size: cover;
 }
+
+.img-log {
+    background-image: url("../images/accede-a-tu-cuenta.jpg");
+    background-size: cover;
+}
+
 
 .contenedor {
     background-color: #2b2b2b42;
