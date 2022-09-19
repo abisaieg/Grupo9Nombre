@@ -41,20 +41,22 @@ header {
 .btn-buscar:hover {
     background-color:#8f6400;
     border-color: #000000;
-    
     box-shadow: none; 
 }
 
 .btn-buscar:active {
-    background-color:#6e4d00;
-    box-shadow: none;
-    border: none;
-}
-    
-.btn-buscar:focus   {
-    background-color:#6e4d00;
-    border: none;
+    background-color: #503800;
+    border-color: black !important;
+    color: black !important;
     box-shadow: none !important;
+    font-size: 98%;
+}
+
+.btn-buscar:focus {
+    background-color:#6e4d00;
+    border-color: #ffffff;
+    box-shadow: none; 
+    color: white;
 }
 
 .logo {

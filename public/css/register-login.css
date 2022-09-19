@@ -42,6 +42,7 @@ label{
 .formuinput:focus {
     color: rgb(170, 170, 170);
     text-align: center; 
+    border-color:#f7c143;
 }
 
 
@@ -52,45 +53,43 @@ hr {
 
 
 .container {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 
-}
-
-.btn {
-    background-color:#f7c143;
-    border-color: black;
-    color: black;
-}
-
-.btn:hover {
-    background-color:#8f6400;
-    border-color: #000000;
-    box-shadow: none;
-}
-
-.btn:active {
-    background-color:#6e4d00;
-    box-shadow: none;
-    border: none;
-}
-
-.btn:focus   {
-    background-color:#6e4d00;
-    border: none;
-    box-shadow: none !important;
 }
 
 .btn-formu {
+    background-color:#f7c143;
+    border-color: black;
+    color: black;
     display: block;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.form-control:focus {
-   box-shadow:none;
-   border-color: #f7c143;
+.btn-formu:hover {
+    background-color:#8f6400;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+.btn-formu:active {
+    background-color:#f7c143 !important;
+    border-color: white !important;
+    color: white !important;
+    box-shadow: none !important;
+    font-size: 98%;
+}
+
+.btn-formu:focus {
+    background-color:#f7c143;
+    border-color: black;
+    color: black;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-reg {
