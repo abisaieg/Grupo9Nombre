@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Iniciar Sesion</title>
-</head>
-<header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Conciertos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Teatro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Deportes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link login" href="#">Ingresar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link login" href="#">Registrarse</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <form role="search" ><button class="btn btn-outline-success" type="submit">Buscar</button>           
-              </form>
-          </div>
-          </div>              
-        </div>            
-      </nav>                  
-  
-  </header>
-<body>
-    
-    <div class="divform">
-        <form>
-            <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3">
-              </div>
-              
-            </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>    
-        </form>
-    </div>
-    <!-- BOOTSTRAP javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Ingresar</title>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="images/Logo3.png" alt="logo" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:3000/#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conciertos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Teatro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Deportes</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link login" href="#">Ingresar</a>
+          </li>
+          <li class="nav-item login">
+            <a class="nav-link" href="#">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BUSCADOR -->
+  <div id="buscar" class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <form role="search"><button class="btn btn-outline-success btn-buscar" type="submit">Buscar</button>
+    </form>
+  </div>
+</header>
+
+        <!--FORM-->
+        <body>
+
+          <div class="container card contenedor">
+            <div class="row">
+              <div class="col-4 img-der card">
+              </div>
+              <div class="col-8">
+                <div class="divform">
+                  <h3 class="titulo-login">Inicar sesion</h1>
+                    <hr>
+                    <div class="formu">
+                      <form>
+                        <div class="row mb-3">
+                          <div>
+                            <input type="email" class="form-control formuinput" placeholder="Email" id="inputPassword">
+                          </div>
+                        </div>
+        
+                        <div class="row mb-3">
+                          <div>
+                            <input type="password" class="form-control formuinput" placeholder="Contraseña" id="inputPassword">
+                          </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-formu">Enviar</button>
+                </form>
+        <!-- FOOTER -->
+        <footer>
+          <div class="container-fluid" id="footdiv">
+            <div class="row">
+              <div class="col-6">
+                <p>Contacto<br>
+                <p>Numero random</p>
+              </div>
+              <div class="col-6">
+                <p>Redes<br>
+                <p>Iconitos de Redes</p>
+              </div>
+            </div>
+          </div>
+          <!--COPYRIGHT-->
+          <div class="container-fluid" id="copycontainer">
+            <p id="copyrightc">copyright © Prevento 2022</p>
+          </div>
+        </footer>
+        <!-- BOOTSTRAP javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
 </body>
-<footer>
-    <div class="container-fluid" id="footdiv">
-        <div class="row">
-            <div class="col-6"><p>Localidad<br>
-            <span id="localidad">San Fernando</p></span></div>
-            <div class="col-6"><p>Redes<br>
-              <a id="facebooka" href="https://www.facebook.com/camila.inalen.9/"><i class="fab fa-facebook-square"></i><a id="whatsappc" href="https://i.ibb.co/8MRgv7r/whatsapp.jpg"><i class="fab fa-whatsapp"></i></i></a></p>
-            </p></div>
-            
-        </div>
-    </div>
-  <!--Copyright-->
-    <div class="container-fluid" id="copycontainer">
-        <p id="copyrightc">copyright © CamilaInalén 2021</p>
-    </div>
-  </footer>
+
 </html>
