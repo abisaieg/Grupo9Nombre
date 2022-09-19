@@ -118,6 +118,7 @@ hr {
 .container {
     margin-top: 2%;
     margin-bottom: 2%;
+
 }
 
 .btn {
@@ -167,7 +168,7 @@ hr {
     border-style: solid;
 }
 
-.titulo-register{
+.titulo-login-register{
     color: #f7c143;
     margin: auto;
     text-align: center;

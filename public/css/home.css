@@ -1,41 +1,6 @@
-body {
-    background: linear-gradient(135deg, hsla(0, 0%, 0%, 1) 0%, rgb(24, 24, 24) 86%, rgb(41, 41, 41) 100%);
-}
-
-header {
-    background-color: #f7c143;
-    padding-bottom: 1%;
-}
-
-#footdiv {
-    padding: 3%;
-    background-color: #f7c143 ;
-    text-align: center;
-    color: black;
-}
-
-#copycontainer {
-    background-color: #000000 ;
-    color: #ffffff ;
-    text-align: center;
-    margin: auto;
-}
-
-.navbar {
-    background-color: #f7c143;
-}
 
 h1 {
     color: #f7c143;
-}
-
-.login {
-text-align: right;
-}
-
-#buscar {
-    width: 50%;
-    margin: auto;
 }
 
 .card {
@@ -52,31 +17,25 @@ text-align: right;
     margin: auto;
 }
 
-.card-btn , .btn-buscar{
+.card-btn{
     background-color:#f7c143;
     border-color: black;
     color: black;
 }
 
-.btn-buscar {
-    background-color: #6e4d00;
-    border-color: white;
-    color: white;
-}
-
-.card-btn:hover , .btn-buscar:hover {
+.card-btn:hover {
     background-color:#8f6400;
     border-color: #000000;
     box-shadow: none;
 }
 
-.card-btn:active , .btn-buscar:active {
+.card-btn:active {
     background-color:#6e4d00;
     box-shadow: none;
     border: none;
 }
 
-.card-btn:focus , .btn-buscar:focus   {
+.card-btn:focus {
     background-color:#6e4d00;
     border: none;
     box-shadow: none !important;
@@ -89,12 +48,6 @@ text-align: right;
 
 h5.card-title , .categoria-title { 
     color:#f7c143;
-}
-
-.logo {
-    width: 3%;
-    margin-left:1%;
-    margin-right: 1%;
 }
 
 .carousel-control-next , .carousel-control-prev {
