@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "/public")))
 
 //Poner en servidor localhost:3000
 app.listen(3000,function(){
-    console.log("Servidor andando")
+    console.log("Servidor subido a la escaloneta")
 })
 
 //Poner en la web http://localhost:3000/home
