@@ -41,6 +41,6 @@ app.get("/carrocompras",(req,res)=>{
 })
 
 //Rutas no asignadas   
-app.get("*",(req,res)=>{//aca le paso la locaciona a donde redirecciono que es *
-    res.send("rutas no estan asignadas")
+app.get("/",(req,res)=>{//aca va directo al home
+    res.sendFile(__dirname + "/views/home.html")
 })

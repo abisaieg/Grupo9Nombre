@@ -25,6 +25,7 @@ header {
 .navbar {
     background-color: #f7c143;
     font-weight: 500;
+    
 }
 
 #buscar {
@@ -67,4 +68,4 @@ header {
 
 .login {
     text-align: right;
-    }
+}
