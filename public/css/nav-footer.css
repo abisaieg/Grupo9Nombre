@@ -31,30 +31,27 @@ header {
 }
 
 .btn-buscar {
-    background-color: #6e4d00;
-    border-color: white;
-    color: white;
+    background-color:#f7c143;
+    border-color: black;
+    color: black;
 }
 
 .btn-buscar:hover {
     background-color:#8f6400;
     border-color: #000000;
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 .btn-buscar:active {
-    background-color: #503800;
-    border-color: black !important;
-    color: black !important;
-    box-shadow: none !important;
-    font-size: 98%;
+    background-color:#6e4d00;
+    box-shadow: none;
+    border: none;
 }
 
 .btn-buscar:focus {
     background-color:#6e4d00;
-    border-color: #ffffff;
-    box-shadow: none; 
-    color: white;
+    border: none;
+    box-shadow: none !important;
 }
 
 .logo {
