@@ -34,8 +34,8 @@ app.get("/descripcionproducto",(req,res)=>{
     res.sendFile((__dirname + "/views/descripcionproducto.html"))
 
 })
-//Poner en la web http://localhost:3000/carrocompras
-app.get("/carrocompras",(req,res)=>{
+//Poner en la web http://localhost:3000/cart
+app.get("/cart",(req,res)=>{
     res.sendFile((__dirname + "/views/carrocompras.html"))
 
 })
