@@ -29,8 +29,8 @@ app.get("/registrarse",(req,res)=>{
  
 })
 
-//Poner en la web http://localhost:3000/descripcionproducto
-app.get("/descripcionproducto",(req,res)=>{
+//Poner en la web http://localhost:3000/descripcion
+app.get("/descripcion",(req,res)=>{
     res.sendFile((__dirname + "/views/descripcionproducto.html"))
 
 })

@@ -7,38 +7,15 @@ h1 {
     display:inline-block;
     margin: 2%;
     background-color: white;
-    color: rgb(0, 0, 0);
+    color: #4F4F4F !important;
     border-color: white;
-    
+    cursor: pointer;
 }
 
 .tarj-container{
     width: 80%;
     margin: auto;
-}
-
-.card-btn{
-    background-color:#f7c143;
-    border-color: black;
-    color: black;
-}
-
-.card-btn:hover {
-    background-color:#8f6400;
-    border-color: #000000;
-    box-shadow: none;
-}
-
-.card-btn:active {
-    background-color:#6e4d00;
-    box-shadow: none;
-    border: none;
-}
-
-.card-btn:focus {
-    background-color:#6e4d00;
-    border: none;
-    box-shadow: none !important;
+    color: #4F4F4F !important;
 }
 
 .categoria-title {
@@ -47,7 +24,8 @@ h1 {
 }
 
 h5.card-title , .categoria-title { 
-    color:#f7c143;
+    color:#152534;
+    letter-spacing: 1px;
 }
 
 .carousel-control-next , .carousel-control-prev {

@@ -19,30 +19,34 @@
    
       <div class="container-fluid">
         <img src="images/Logo3.png" alt="logo" class="logo">
+        <span id="tipografia-logo" class="p-0 mr-5"><strong><i>Prevento</i></strong></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://localhost:3000/home">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="/home">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conciertos</a>
+              <a class="nav-link" href="#conciertos">Conciertos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Teatro</a>
+              <a class="nav-link" href="#teatro">Teatro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Deportes</a>
+              <a class="nav-link" href="#deportes">Deportes</a>
             </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link login" href="http://localhost:3000/login">Ingresar</a>
+              <a class="nav-link login" href="/login">Ingresar</a>
             </li>
           <li class="nav-item login">
-            <a class="nav-link" href="http://localhost:3000/registrarse?">Registrarse</a>
+            <a class="nav-link" href="/registrarse?">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="" href="/cart"> <i class="bi bi-cart icono-carrito"></i> </a>
           </li>
         </ul> 
         </div>              
@@ -78,11 +82,11 @@
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">ANTERIOR</span>
+      <span class="sr-only"></span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">SIGUIENTE</span>
+      <span class="sr-only"></span>
     </a>
   </div>
 
@@ -93,6 +97,47 @@
   <h3 class="categoria-title">Más vendidos:</h3>
 <div class="tarjetas">
   <div>
+
+    <a href="/descripcion">
+    <div class="card shadow" style="width: 18rem;">
+      <img class="card-img-top" src="images/evento-1.png"Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
+        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
+      </div>
+    </div>
+  </a>
+  <a href="/descripcion">
+  <div class="card shadow" style="width: 18rem;">
+    <img class="card-img-top" src="images/evento-2.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ROMBAI </h5>
+      <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
+    </div>
+  </div>
+  </a>
+
+  <a href="/descripcion">
+    <div class="card shadow" style="width: 18rem;">
+      <img class="card-img-top" src="images/gorillaz.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">GORILLAZ </h5>
+        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
+      </div>
+    </div>
+    </a>
+
+  <div class="card shadow" style="width: 18rem;">
+    <img class="card-img-top" src="images/tarj-ej.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+    </div>
+  </div>
+
+  <h3 class="categoria-title" id="conciertos">Conciertos:</h3>
+
   <div class="card shadow" style="width: 18rem;">
     <img class="card-img-top" src="images/tarj-ej.jpg"Card image cap">
     <div class="card-body">
@@ -129,7 +174,7 @@
     </div>
   </div>
 
-  <h3 class="categoria-title">Conciertos:</h3>
+  <h3 class="categoria-title" id="teatro">Teatro:</h3>
 
   <div class="card shadow" style="width: 18rem;">
     <img class="card-img-top" src="images/tarj-ej.jpg"Card image cap">
@@ -167,45 +212,7 @@
     </div>
   </div>
 
-  <h3 class="categoria-title">Teatro:</h3>
-
-  <div class="card shadow" style="width: 18rem;">
-    <img class="card-img-top" src="images/tarj-ej.jpg"Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card shadow" style="width: 18rem;">
-    <img class="card-img-top" src="images/tarj-ej.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card shadow" style="width: 18rem;">
-    <img class="card-img-top" src="images/tarj-ej.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card shadow" style="width: 18rem;">
-    <img class="card-img-top" src="images/tarj-ej.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
-    </div>
-  </div>
-
-  <h3 class="categoria-title">Deportes:</h3>
+  <h3 class="categoria-title" id="deportes">Deportes:</h3>
 
   <div class="card shadow" style="width: 18rem;">
     <img class="card-img-top" src="images/tarj-ej.jpg"Card image cap">
@@ -248,19 +255,30 @@
 </div>
 
 <!-- FOOTER -->
-<footer>
-  <div class="container-fluid" id="footdiv">
-      <div class="row">
-          <div class="col-6"><p>Contacto<br>
-            <p>Numero random</p></div>
-          <div class="col-6"><p>Redes<br>
-            <p>Iconitos de Redes</p></div>   
-      </div>
-  </div>
-<!--COPYRIGHT-->
-  <div class="container-fluid" id="copycontainer">
-      <p id="copyrightc">copyright © Prevento 2022</p>
-  </div>
+<footer class="container-fluid shadow" id="footdiv">
+  <div class="col-md-9 text-center justify-content-center mx-auto mt-3">
+    <div class="pb-4 fs-5">
+      <span class="mx-3"><a href="#">Sobre nosotros</a></span>
+      <span class="mx-3"><a href="#">Publicá tu evento</a></span>
+      <span class="mx-3"><a href="#">Preguntas frecuentes</a></span>
+      <span class="mx-3"><a href="#">Legal</a></span>
+      <span class="mx-3"><a href="#">Contacto</a></span>
+    </div>
+    <div class="footer-site-logo mb-4">
+      <img src="/images/Logo3.png" style="width: 5em;" class="mb-2">
+      <span class="p-0 mt-1 fs-3 d-inline"><strong><i id="tipografia-logo2" class="">Prevento</i></strong></span>
+    </div>
+    <div class="social mb-4">
+  <a href="#"><i class="bi bi-instagram m-2"></i></a>
+  <a href="#"><i class="bi bi-facebook m-2"></i></a>
+  <a href="#"><i class="bi bi-twitter m-2"></i></a>
+  <a href="#"><i class="bi bi-envelope m-2"></i></a>
+
+    </div>
+    <div class="copyright">
+    <p class="mb-0 pb-0"><small>Copyright © 2022 Prevento.</small></p>
+    </div>
+    </div>
 </footer>
 
 

@@ -1,17 +1,10 @@
 h1 {
-    color: #f7c143;
+    color: #152534;
 }
 
 label{
     color: #ffffff;
 }
-
-.btn-buscar{
-    background-color:#f7c143;
-    border-color: black;
-    color: black;
-}
-
 
 .form-control:focus {
     box-shadow: none !important;
@@ -59,9 +52,9 @@ hr {
 }
 
 .btn-formu {
-    background-color:#f7c143;
-    border-color: black;
-    color: black;
+    background-color:#55CADB;
+    border-color: #55CADB;
+    color: #ffffff;
     display: block;
     margin-top: 10%;
     margin-left: auto;
@@ -69,13 +62,13 @@ hr {
 }
 
 .btn-formu:hover {
-    background-color:#8f6400;
-    border-color: #000000;
+    background-color:#55CADB;
+    border-color: #55CADB;
     box-shadow: none;
 }
 
 .btn-formu:active {
-    background-color:#f7c143 !important;
+    background-color:#55CADB !important;
     border-color: white !important;
     color: white !important;
     box-shadow: none !important;
@@ -83,9 +76,9 @@ hr {
 }
 
 .btn-formu:focus {
-    background-color:#f7c143;
-    border-color: black;
-    color: black;
+    background-color:#55CADB;
+    border-color: #55CADB;
+    color: #ffffff;
     display: block;
     margin-top: 10%;
     margin-left: auto;
@@ -104,13 +97,12 @@ hr {
 
 
 .contenedor {
-    background-color: #2b2b2b42;
-    border-color: #f7c143;
+    border-color: white;
     border-style: solid;
 }
 
 .titulo-login-register{
-    color: #f7c143;
+    color: #152534;
     margin: auto;
     text-align: center;
     margin-bottom: 4%;
