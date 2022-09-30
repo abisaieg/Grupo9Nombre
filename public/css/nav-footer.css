@@ -41,10 +41,11 @@ header {
 .nav-link {
     color: #152534 !important; 
     /* font-family: 'Comfortaa', sans-serif; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #footdiv {
+    margin-top: 40px;
     padding-top: 3%;
     background-color: #303030 ;
     text-align: center;
@@ -95,11 +96,17 @@ header {
 }
 
 .logo {
-    width: 4%;
-    margin-left:1%;
-    margin-right: 1%;
+    width: 36px;
+    margin-left:6px;
+    margin-right: 3px;
 }
 
 .login {
     text-align: right;
 }
+
+@media only screen and (max-width: 600px) {
+    #buscar {
+        width: 75%;
+    }
+  }
