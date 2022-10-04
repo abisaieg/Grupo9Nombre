@@ -14,7 +14,6 @@ h1 {
 }
 
 .tarj-container{
-    width: 95%;
     color: #4F4F4F !important;
 }
 
@@ -35,6 +34,8 @@ h5.card-title , .categoria-title {
 .tarjetas {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 .carousel {
     width: 98%;
