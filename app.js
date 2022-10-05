@@ -2,6 +2,10 @@ const express = require("express")
 const path = require("path")
 const app = express()
 
+// EJS
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views/'));
+
 //Pongo publica la carpeta public
 app.use(express.static(path.join(__dirname, "/public")))
 
@@ -11,36 +15,11 @@ app.listen(process.env.PORT || 3000,function(){
     console.log("Servidor subido a la escaloneta")
 })
 
-//Poner en la web http://localhost:3000/home
-app.get("/home",(req,res)=>{
-    res.sendFile((__dirname + "/views/home.html"))
+//const mainRouter = require('./routes/main'); // Rutas main
+const productRouter = require('./routes/products'); // Rutas /products
+const mainRouter = require('./routes/main')
+app.use('/evento', productRouter);
+app.use('/', mainRouter);
 
-})
 
-//Poner en la web http://localhost:3000/login
-app.get("/login",(req,res)=>{
-    res.sendFile((__dirname + "/views/login.html"))
- 
-})
-
-//Poner en la web http://localhost:3000/registrarse
-app.get("/registrarse",(req,res)=>{
-    res.sendFile((__dirname + "/views/registrarse.html"))
- 
-})
-
-//Poner en la web http://localhost:3000/descripcion
-app.get("/descripcion",(req,res)=>{
-    res.sendFile((__dirname + "/views/descripcionproducto.html"))
-
-})
-//Poner en la web http://localhost:3000/cart
-app.get("/cart",(req,res)=>{
-    res.sendFile((__dirname + "/views/carrocompras.html"))
-
-})
-
-//Rutas no asignadas   
-app.get("/",(req,res)=>{//aca va directo al home
-    res.sendFile(__dirname + "/views/home.html")
-})
+module.exports = app;
