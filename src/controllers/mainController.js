@@ -12,5 +12,10 @@ register: (req, res) => {
 cart: (req, res) => {
     res.render('products/carrocompras.ejs');
 },
+
+profile: (req, res) => {
+    res.render('accounts/perfil.ejs');
+},
+
 }
 module.exports = controller;

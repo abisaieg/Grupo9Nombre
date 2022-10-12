@@ -16,9 +16,9 @@ app.listen(process.env.PORT || 3000,function(){
 })
 
 //const mainRouter = require('./routes/main'); // Rutas main
-const productRouter = require('./routes/products'); // Rutas /products
-const mainRouter = require('./routes/main')
-app.use('/evento', productRouter);
+const productRouter = require('./src/routes/productRouter'); // Rutas /products
+const mainRouter = require('./src/routes/mainRouter')
+app.use('/products', productRouter);
 app.use('/', mainRouter);
 
 
