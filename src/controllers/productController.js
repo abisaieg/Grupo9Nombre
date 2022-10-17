@@ -1,21 +1,27 @@
+const path = require('path');
+const fs = require('fs');
+
+const pathProductDb = path.join(__dirname, '../data/eventos.json');
+const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
+
+
 const controller = {
-	// Root - Show all products|
-evento: (req, res) => {
-	res.render('products/descripcionproducto.ejs');
-},
+	vistaListadoProd: (req, res) => {
+		//products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		res.render('products/home',{evento: eventos})
+	},
+	vistaCrearProd: (req, res) => {
+		res.render('products/crear')
+	},
+	vistaDetalleProd: (req, res) => {
+		res.render('products/descripcionproducto')
+	},
+	vistaEditarProd: (req, res) => {
+		res.render('products/editar')
+	},
 
-// esta creo que es lo mismo que detalle de producto
-listar: (req, res) => {
-	res.render('products/listar.ejs');
-},
-
-crear: (req, res) => {
-	res.render('products/crear.ejs');
-},
-
-editar: (req, res) => {
-	res.render('products/editar.ejs');
-},
-
+	accionGuardar: (req, res) => {},
+	accionEditar: (req, res) => {},
+	accionEliminar: (req, res) => {},
 }
 module.exports = controller;
