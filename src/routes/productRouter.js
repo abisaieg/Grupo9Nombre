@@ -21,7 +21,7 @@ const productController = require('../controllers/productController');
 
 router.get('/',productController.vistaListadoProd)
 router.get('/create',productController.vistaCrearProd)
-router.get('/detail/:id',productController.vistaDetalleProd)
+router.get('/descripcionproducto/:id',productController.vistaDetalleProd)
 router.get('/edit/:id',productController.vistaEditarProd)
 
 router.post('/create',uploadFile.single('imageProduct'),productController.accionGuardar) //guardar un nuevo producto

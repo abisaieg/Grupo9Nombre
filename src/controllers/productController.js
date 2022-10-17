@@ -13,8 +13,19 @@ const controller = {
 	vistaCrearProd: (req, res) => {
 		res.render('products/crear')
 	},
+	// aca le pasamos un evento a la vista descripcion producto
 	vistaDetalleProd: (req, res) => {
-		res.render('products/descripcionproducto')
+		let idURL = req.params.id;
+		let productoEncontrado;
+
+		for (let p of eventos){
+			if (p.id==idURL){
+				productoEncontrado=p;
+				break;
+			}
+		}
+
+		res.render('products/descripcionproducto',{productoDetalle: productoEncontrado});
 	},
 	vistaEditarProd: (req, res) => {
 		res.render('products/editar')
@@ -57,6 +68,31 @@ const controller = {
 
 
 	accionEditar: (req, res) => {},
-	accionEliminar: (req, res) => {},
+
+	accionEliminar: (req, res) => {
+
+		let id = req.params.id;
+		let ProductoEncontrado;
+
+		let Nproducts = eventos.filter(function(e){
+			return id!=e.id;
+		})
+
+		for (let producto of eventos){
+			if (producto.id == id){
+			    ProductoEncontrado=producto;
+			}
+		}
+
+		// en el metodo delte usamos una nueva linea para borrar que es la siguiente
+		// fs.unlinkSync(path.join(__dirname, '../../public/images/products/', ProductoEncontrado.image));
+		// aca le pasamos la direccion de la imagen que deseamos borrar
+		// borra el archivo
+		fs.unlinkSync(path.join(__dirname, '../../public/images/uploads/', ProductoEncontrado.imagen));
+
+		fs.writeFileSync(pathProductDb, JSON.stringify(Nproducts,null,' '));
+
+		res.redirect('/');
+	},
 }
 module.exports = controller;

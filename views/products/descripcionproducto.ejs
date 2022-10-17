@@ -47,22 +47,19 @@
           <div class="row shadow">
               <!-- imagen producto -->
             <div class="col-sm-6 caja">
-              <img src="images/gorillaz.jpg" alt="" class = "imagen">
+              <img src="images/uploads/<%=productoDetalle.imagen%>.jpg" alt="" class = "imagen">
             </div>
             <!-- descripcion del producto -->
             <div class="col-sm-6 caja">
             <br>
-              <h1>GORILLAZ</h1>
+              <h1><%=productoDetalle.nombre%></h1>
               <br>
-              <p>descripcion del evento descripcion del evento descripcion del evento descripcion del evento descripcion del evento
-                  descripcion del evento descripcion del evento descripcion del evento descripcion del evento</p>
+              <p><%=productoDetalle.descipcion%></p>
                   <h3>Fechas</h3>
 
                   <div class="col-sm-12 caja">
                     <select name="fechas" id="fechas">
-                        <option value="r">12/07/2022</option>
-                        <option value="a">13/07/2022</option>
-                        <option value="v">14/07/2022</option>
+                        <option value="r"><%=productoDetalle.fecha%></option>
                       </select>
                   </div>
                     <br>
@@ -73,17 +70,11 @@
                   <div class="col-sm-12 caja" >
                     <img src="images/mapa.jpg" alt="" class = "imagenlocacion">
                   </div>
-                  
+                  <a href="/products/edit/<%=productoDetalle.id%>" class="action-button edit" >EDITAR PRODUCTO</a>
+                  <form action="/products/<%=productoDetalle.id%>?_method=DELETE" method="POST" style="display: inline-flex" onsubmit="return confirm('Esta seguro que desea eliminarlo?');"> 
+                    <button type="submit" class="action-button delete">ELIMINAR</button>
             </div>
           </div>
-          <div class="row">
-              <!-- mapa -->
-            <div class="col-sm-6 caja">
-             
-            </div>
-            <!-- boton comprar -->
-            <div class="col-sm-6">
-            </div>
           </div>
         </div>
         

@@ -43,166 +43,79 @@
     </a>
   </div>
   <!-- TARJETAS -->
-
+ 
   <div class="tarj-container">
     <h3 class="categoria-title">Más vendidos:</h3>
-    <div class="tarjetas">
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top" src="images/evento-1.png"Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
+    <% for(let eventos of evento) { %>  
+    <section class="product-box">
+      <div class="tarjetas">
+          <a href="/products/descripcionproducto/<%=eventos.id %>">
+            <div class="card shadow" >
+              <img class="card-img-top" src="/images/uploads/<%=eventos.imagen %>" Card image cap>
+              <div class="card-body">
+                <h5 class="card-title"><%=eventos.nombre %></h5>
+                <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%=eventos.fecha %> </p>
             </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">ROMBAI </h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
             </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GORILLAZ </h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-            </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top" src="images/evento-1.png"Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-            </div>
-          </div>
-        </a>
-    </div>
+          </a>
+    </section>
+        <% } %>
+  </div>
+
+  <div class="tarj-container">
     <h3 class="categoria-title" id="conciertos">Conciertos:</h3>
-    <div class="tarjetas">
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top" src="images/evento-1.png"Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">ROMBAI </h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">GORILLAZ </h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top" src="images/evento-1.png"Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-          </div>
-        </div>
-      </a>
-  </div>
-  <h3 class="categoria-title" id="teatro">Teatro:</h3>
-  <div class="tarjetas">
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top" src="images/evento-1.png"Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">ROMBAI </h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">GORILLAZ </h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top" src="images/evento-1.png"Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-        </div>
-      </div>
-    </a>
-</div>
+    <% for(let eventos of evento) { %>
+      <section class="product-box">
+        <div class="tarjetas">
+            <a href="/products/descripcionproducto/<%=eventos.id %>">
+              <div class="card shadow" >
+                <img class="card-img-top" src="/images/uploads/<%=eventos.imagen %>" Card image cap>
+                <div class="card-body">
+                  <h5 class="card-title"><%=eventos.nombre %></h5>
+                  <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%=eventos.fecha %> </p>
+              </div>
+              </div>
+            </a>
+      </section>
+          <% } %>
+    </div>
+
+  <div class="tarj-container">
+    <h3 class="categoria-title" id="teatro">Teatro:</h3>
+    <% for(let eventos of evento) { %>
+      <section class="product-box">
+        <div class="tarjetas">
+            <a href="/products/descripcionproducto/<%=eventos.id %>">
+              <div class="card shadow" >
+                <img class="card-img-top" src="/images/uploads/<%=eventos.imagen %>" Card image cap>
+                <div class="card-body">
+                  <h5 class="card-title"><%=eventos.nombre %></h5>
+                  <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%=eventos.fecha %> </p>
+              </div>
+              </div>
+            </a>
+      </section>
+          <% } %>
+    </div>
+
+<div class="tarj-container">
 <h3 class="categoria-title" id="deportes">Deportes:</h3>
-<div class="tarjetas">
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top" src="images/evento-1.png"Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">ROMBAI </h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">GORILLAZ </h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top" src="images/evento-1.png"Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-      </div>
-    </div>
-  </a>
-</div>
+    <% for(let eventos of evento) { %>
+    <section class="product-box">
+      <div class="tarjetas">
+          <a href="/products/descripcionproducto/<%=eventos.id %>">
+            <div class="card shadow" >
+              <img class="card-img-top" src="/images/uploads/<%=eventos.imagen %>" Card image cap>
+              <div class="card-body">
+                <h5 class="card-title"><%=eventos.nombre %></h5>
+                <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%=eventos.fecha %> </p>
+            </div>
+            </div>
+          </a>
+    </section>
+        <% } %>
   </div>
-  </div>
+
   <!-- FOOTER -->
   <%- include('../partials/footer') %>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
