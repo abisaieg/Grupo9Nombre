@@ -45,161 +45,54 @@
   <!-- TARJETAS -->
 
   <div class="tarj-container">
-    <h3 class="categoria-title">Más vendidos:</h3>
+    <h3 class="categoria-title">Conciertos:</h3>
     <div class="tarjetas">
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top" src="images/evento-1.png"Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
+      <% evento.forEach(element => { %>
+        <% if (element.categoria == "Conciertos") { %>
+          <a href="products/detail/<%= element.id %>">
+            <div class="card shadow" >
+              <img class="card-img-top" src="images/evento-1.png"Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"> <%= element.nombre %>  </h5>
+                <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">ROMBAI </h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-            </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GORILLAZ </h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-            </div>
-          </div>
-        </a>
-        <a href="/evento">
-          <div class="card shadow" >
-            <img class="card-img-top" src="images/evento-1.png"Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-            </div>
-          </div>
-        </a>
+          </a>
+        <% } %>
+      <% }) %>
     </div>
-    <h3 class="categoria-title" id="conciertos">Conciertos:</h3>
-    <div class="tarjetas">
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top" src="images/evento-1.png"Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">ROMBAI </h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">GORILLAZ </h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-          </div>
-        </div>
-      </a>
-      <a href="/evento">
-        <div class="card shadow" >
-          <img class="card-img-top" src="images/evento-1.png"Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-          </div>
-        </div>
-      </a>
-  </div>
+
   <h3 class="categoria-title" id="teatro">Teatro:</h3>
   <div class="tarjetas">
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top" src="images/evento-1.png"Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">ROMBAI </h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">GORILLAZ </h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-        </div>
-      </div>
-    </a>
-    <a href="/evento">
-      <div class="card shadow" >
-        <img class="card-img-top" src="images/evento-1.png"Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-          <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-        </div>
-      </div>
-    </a>
-</div>
+    <% evento.forEach(element => { %>
+      <% if (element.categoria == "Teatros") { %>
+        <a href="products/detail/<%= element.id %>">
+          <div class="card shadow" >
+            <img class="card-img-top" src="images/evento-1.png"Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"> <%= element.nombre %>  </h5>
+              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+            </div>
+          </div>
+        </a>
+      <% } %>
+    <% }) %>
+  </div>
 <h3 class="categoria-title" id="deportes">Deportes:</h3>
 <div class="tarjetas">
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top" src="images/evento-1.png"Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top container" src="images/evento-2.jpeg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">ROMBAI </h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 28 de octubre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top container" src="images/gorillaz.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">GORILLAZ </h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 2 de diciembre </p>
-      </div>
-    </div>
-  </a>
-  <a href="/evento">
-    <div class="card shadow" >
-      <img class="card-img-top" src="images/evento-1.png"Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">NICKI NICOLE | BIZARRAP</h5>
-        <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> 5 | 6 de noviembre </p>
-      </div>
-    </div>
-  </a>
+  <% evento.forEach(element => { %>
+    <% if (element.categoria == "Deportes") { %>
+      <a href="products/detail/<%= element.id %>">
+        <div class="card shadow" >
+          <img class="card-img-top" src="images/evento-1.png"Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"> <%= element.nombre %>  </h5>
+            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+          </div>
+        </div>
+      </a>
+    <% } %>
+  <% }) %>
 </div>
   </div>
   </div>

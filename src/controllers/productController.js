@@ -7,7 +7,6 @@ const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 
 const controller = {
 	vistaListadoProd: (req, res) => {
-		//products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		res.render('products/home',{evento: eventos})
 	},
 	vistaCrearProd: (req, res) => {
