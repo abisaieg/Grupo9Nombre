@@ -1,190 +1,29 @@
 [
  {
   "id": 1,
-  "nombre": "pellentesque eget",
-  "descipcion": "eros viverra eget congue eget semper rutrum nulla nunc purus phasellus",
-  "precio": 6933,
-  "categoria": "Teatros",
-  "imagen": "ruta4",
-  "fecha": "3/4/2022"
+  "nombre": "Rombai",
+  "precio": "1500",
+  "fecha": "2022-10-01",
+  "categoria": "in-sale",
+  "descipcion": "Rombai vuelte a la Argentina con su nuevo show presentando nuevo disco.",
+  "imagen": "1666027246662_img_.jpeg"
  },
  {
   "id": 2,
-  "nombre": "in",
-  "descipcion": "pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu",
-  "precio": 21254,
-  "categoria": "Teatros",
-  "imagen": "ruta1",
-  "fecha": "4/9/2022"
+  "nombre": "Nikki Nicole Bizarrap",
+  "precio": "1500",
+  "fecha": "2022-10-02",
+  "categoria": "in-sale",
+  "descipcion": "Nikki Nicole y Bizarrap se presentan juntos en una noche unica. ",
+  "imagen": "1666027364655_img_.png"
  },
  {
   "id": 3,
-  "nombre": "orci vehicula",
-  "descipcion": "semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero",
-  "precio": 33143,
-  "categoria": "Teatros",
-  "imagen": "ruta1",
-  "fecha": "7/26/2022"
- },
- {
-  "id": 4,
-  "nombre": "in lectus pellentesque at",
-  "descipcion": "et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis",
-  "precio": 25565,
-  "categoria": "Teatros",
-  "imagen": "ruta2",
-  "fecha": "12/7/2021"
- },
- {
-  "id": 5,
-  "nombre": "id",
-  "descipcion": "ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim",
-  "precio": 25143,
-  "categoria": "Teatros",
-  "imagen": "ruta4",
-  "fecha": "10/25/2021"
- },
- {
-  "id": 6,
-  "nombre": "semper est quam pharetra",
-  "descipcion": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus",
-  "precio": 8609,
-  "categoria": "Teatros",
-  "imagen": "ruta2",
-  "fecha": "1/23/2022"
- },
- {
-  "id": 7,
-  "nombre": "luctus et",
-  "descipcion": "quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis",
-  "precio": 18249,
-  "categoria": "Conciertos",
-  "imagen": "ruta3",
-  "fecha": "1/11/2022"
- },
- {
-  "id": 8,
-  "nombre": "erat fermentum",
-  "descipcion": "est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum",
-  "precio": 10845,
-  "categoria": "Teatros",
-  "imagen": "ruta3",
-  "fecha": "7/18/2022"
- },
- {
-  "id": 9,
-  "nombre": "consequat lectus in",
-  "descipcion": "augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa",
-  "precio": 22409,
-  "categoria": "Teatros",
-  "imagen": "ruta3",
-  "fecha": "12/7/2021"
- },
- {
-  "id": 10,
-  "nombre": "cubilia",
-  "descipcion": "eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed",
-  "precio": 12785,
-  "categoria": "Conciertos",
-  "imagen": "ruta1",
-  "fecha": "10/18/2021"
- },
- {
-  "id": 11,
-  "nombre": "dictumst morbi vestibulum velit",
-  "descipcion": "urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue",
-  "precio": 33954,
-  "categoria": "Teatros",
-  "imagen": "ruta4",
-  "fecha": "3/28/2022"
- },
- {
-  "id": 12,
-  "nombre": "diam",
-  "descipcion": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
-  "precio": 21843,
-  "categoria": "Deportes",
-  "imagen": "ruta1",
-  "fecha": "5/15/2022"
- },
- {
-  "id": 13,
-  "nombre": "orci",
-  "descipcion": "mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue",
-  "precio": 20342,
-  "categoria": "Conciertos",
-  "imagen": "ruta1",
-  "fecha": "11/5/2021"
- },
- {
-  "id": 14,
-  "nombre": "aenean lectus",
-  "descipcion": "augue aliquam erat volutpat in congue etiam justo etiam pretium",
-  "precio": 24072,
-  "categoria": "Deportes",
-  "imagen": "ruta1",
-  "fecha": "11/16/2021"
- },
- {
-  "id": 15,
-  "nombre": "vestibulum",
-  "descipcion": "neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia",
-  "precio": 10047,
-  "categoria": "Conciertos",
-  "imagen": "ruta4",
-  "fecha": "1/31/2022"
- },
- {
-  "id": 16,
-  "nombre": "vivamus metus arcu",
-  "descipcion": "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in",
-  "precio": 38062,
-  "categoria": "Teatros",
-  "imagen": "ruta1",
-  "fecha": "10/12/2022"
- },
- {
-  "id": 17,
-  "nombre": "nec nisi vulputate nonummy",
-  "descipcion": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris",
-  "precio": 9070,
-  "categoria": "Teatros",
-  "imagen": "ruta1",
-  "fecha": "11/7/2021"
- },
- {
-  "id": 18,
-  "nombre": "quis justo maecenas",
-  "descipcion": "nunc viverra dapibus nulla suscipit ligula in lacus curabitur at",
-  "precio": 23468,
-  "categoria": "Teatros",
-  "imagen": "ruta2",
-  "fecha": "2/2/2022"
- },
- {
-  "id": 19,
-  "nombre": "volutpat erat quisque",
-  "descipcion": "sed tristique in tempus sit amet sem fusce consequat nulla nisl",
-  "precio": 13880,
-  "categoria": "Teatros",
-  "imagen": "ruta1",
-  "fecha": "3/5/2022"
- },
- {
-  "id": 20,
-  "nombre": "in faucibus orci",
-  "descipcion": "in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam",
-  "precio": 22051,
-  "categoria": "Deportes",
-  "imagen": "ruta2",
-  "fecha": "11/27/2021"
- },
- {
-  "id": 21,
-  "nombre": "1",
-  "precio": "1",
+  "nombre": "Gorillaz",
+  "precio": "2000",
+  "fecha": "2022-10-03",
   "categoria": "in-sale",
-  "descipcion": "1",
-  "imagen": "1665976229353_img_.jpg"
+  "descipcion": "La banda britanica en una unica noche.",
+  "imagen": "1666027433766_img_.jpg"
  }
 ]

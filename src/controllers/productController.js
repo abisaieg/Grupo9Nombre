@@ -7,7 +7,7 @@ const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 
 const controller = {
 	vistaListadoProd: (req, res) => {
-		products = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
+		const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 		res.render('products/home',{evento: eventos})
 	},
 	vistaCrearProd: (req, res) => {
@@ -41,7 +41,7 @@ const controller = {
 			id: idNuevo,
 			nombre: req.body.name ,
 			precio: req.body.price,
-			// fecha: req.body.discount, ARMAR EL CAMPO DE FECHA
+			fecha: req.body.date, 
 			categoria: req.body.category,
 			descipcion: req.body.description,
 			// aca guarda la variable asignada arriba
