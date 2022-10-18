@@ -15,18 +15,18 @@
 <body>
 <%- include('../partials/header') %>
 
-    <main> 
+    <main>  
       <div class="container products-wrapper ">
         <div class="row">
           <div class="col-12">
-            <h2 class="products-title text-center ">Formulario de editar de productos</h2>
+            <h2 class="products-title text-center ">Formulario de editar de productos: <i><%=ProductoaEditar.nombre %></i></h2>
           </div>
         </div>
         <div class="col-12">
           <!-- ACA EL FORMULARIO TIENE UN ACTION Y UN METHOD, QUE ME DICE A DONDE ,ANDA LO QUE CREA
           Y POR QUE METODO, EN ESTE CASO LO MANDAMOS A LA RUTA CREATE AL ROUTER
            Y LO MANDAMOS CON EL METODO POST PORQUE ES DATO CRITICO -->
-          <form action="/products" method="POST" enctype="multipart/form-data">
+          <form action="/products/editar" method="POST" enctype="multipart/form-data">
             <div class="row product-detail">
               <div class="col-12 col-md-6 text-center">
                 <!-- CADA NAME DE EL FORMULARIO ES EL NOMBRE DE LA VARIABLE DONDE GUARDA
@@ -35,34 +35,41 @@
                 EN EL JSON -->
                 <label for="name" class="form-label">Nombre del evento:</label>
                 <br>
-                <input type="text" id="name" name="name" placeholder="Ej: Creamfields " class="form-input">
+                <input value="<%=ProductoaEditar.nombre%>" type="text" id="name" name="name" placeholder="Ej: Creamfields " class="form-input">
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="price" class="form-label text-center">Precio:</label>
                 <br>
-                <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
+                <input value="<%=ProductoaEditar.precio %>" type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="description" class="form-label ">Descipción:</label>
                 <br>
-                <textarea name="description" id="description" class="form-input textaera"></textarea>
+                <textarea name="description" id="description" class="form-input textaera"><%=ProductoaEditar.descripcion %></textarea>
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="category" class="form-label">Categoría:</label>
                 <br>
                 <select name="category" id="category" class="form-input">
                   <option value="">Elegí</option>
-                  <option value="in-sale">Musica</option>
-                  <option value="in-sale">Deportes</option>
-                  <option value="in-sale">Teatro</option>
-                  <option value="in-sale">infantiles</option>
+                  <option value="musica">Musica</option>
+                  <option value="deportes">Deportes</option>
+                  <option value="teatro">Teatro</option>
+                  <option value="infantiles">infantiles</option>
                 </select>
+              </div>
+
+              <div class="col-12 col-md-6 text-center">
+                <label for="category" class="form-label">Fecha:</label>
+                <br>
+                <input type="date" id="date" name="date">
               </div>
               
               <div class="col-12 text-center">
                 <br>
-                <label>Seleccionar una imagen para el evento:</label>
-                <input type="file" name="imagen" accept=".jpg" >              
+                <label for="imageProductEdit" class="form-label">Seleccionar Imagen:</label>
+                <!-- INPUT PARA SUBIR LA IMAGEN CON EL MULTER, LE PONEMOS UN NAME -->
+                <input type="file" name="imageProductEdit"/>              
               </div>
 
               <div class="col-12 text-center">

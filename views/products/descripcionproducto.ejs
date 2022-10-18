@@ -70,7 +70,7 @@
                   <div class="col-sm-12 caja" >
                     <img src="images/mapa.jpg" alt="" class = "imagenlocacion">
                   </div>
-                  <a href="/products/edit/<%=productoDetalle.id%>" class="action-button edit" >EDITAR PRODUCTO</a>
+                  <a href="/products/editar/<%=productoDetalle.id%>" class="action-button edit" >EDITAR PRODUCTO</a>
                   <form action="/products/<%=productoDetalle.id%>?_method=DELETE" method="POST" style="display: inline-flex" onsubmit="return confirm('Esta seguro que desea eliminarlo?');"> 
                     <button type="submit" class="action-button delete">ELIMINAR</button>
             </div>

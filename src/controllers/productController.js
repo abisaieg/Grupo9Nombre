@@ -28,7 +28,16 @@ const controller = {
 		res.render('products/descripcionproducto',{productoDetalle: productoEncontrado});
 	},
 	vistaEditarProd: (req, res) => {
-		res.render('products/editar')
+		let id = req.params.id;
+		let productoEncontrado;
+
+		for (let s of eventos){
+			if (id==s.id){
+				productoEncontrado=s;
+			}
+		}
+
+		res.render('products/editar',{ProductoaEditar: productoEncontrado});
 	},
 
 	// accion guardar objeto nuevo en array
@@ -46,7 +55,6 @@ const controller = {
 		// aca lo que hace el req.file.filename es traerme el nombre de la imagen
 		// y guardarl oen una variable, cuando guardamos el producto es el nombre que guarda
 		let nombreImagen = req.file.filename;
-
 
 		let productoNuevo =  {
 			id: idNuevo,
@@ -67,7 +75,30 @@ const controller = {
 	},
 
 
-	accionEditar: (req, res) => {},
+	accionEditar: (req, res) => {
+		
+		console.log(req.file);
+
+		let id = req.params.id;
+
+		let nombreImagen = req.file.filename;
+
+		for (let s of eventos){
+			if (id==s.id){
+				s.nombre= req.body.name;
+				s.precio= req.body.price;
+				s.fecha= req.body.date;
+				s.categoria= req.body.category;
+				s.descripcion= req.body.description;
+				s.imagen = nombreImagen;
+				break;
+			}
+		}
+
+		fs.writeFileSync(pathProductDb, JSON.stringify(eventos,null,' '));
+
+		res.redirect('/');
+	},
 
 	accionEliminar: (req, res) => {
 

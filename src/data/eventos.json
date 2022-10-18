@@ -4,7 +4,7 @@
   "nombre": "Rombai",
   "precio": "1500",
   "fecha": "2022-10-01",
-  "categoria": "in-sale",
+  "categoria": "musica",
   "descipcion": "Rombai vuelte a la Argentina con su nuevo show presentando nuevo disco.",
   "imagen": "1666027246662_img_.jpeg"
  },
@@ -13,7 +13,7 @@
   "nombre": "Nikki Nicole Bizarrap",
   "precio": "1500",
   "fecha": "2022-10-02",
-  "categoria": "in-sale",
+  "categoria": "musica",
   "descipcion": "Nikki Nicole y Bizarrap se presentan juntos en una noche unica. ",
   "imagen": "1666027364655_img_.png"
  },
@@ -22,7 +22,7 @@
   "nombre": "Gorillaz",
   "precio": "1500",
   "fecha": "2022-10-11",
-  "categoria": "",
+  "categoria": "musica",
   "descipcion": "Gorillaz en Bs As",
   "imagen": "1666042246480_img_.jpg"
  }
