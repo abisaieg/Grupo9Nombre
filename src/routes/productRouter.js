@@ -18,13 +18,12 @@ const uploadFile = multer({storage})
 
 // ************ Controller Require ************
 const productController = require('../controllers/productController');
-
+//products/create
 router.get('/',productController.vistaListadoProd)
 
 router.get('/create',productController.vistaCrearProd)
 router.post('/create',uploadFile.single('imageProduct'),productController.accionGuardar) //guardar un nuevo producto
-
-router.get('/descripcionproducto/:id',productController.vistaDetalleProd)
+router.get('/descripcion/:id',productController.vistaDetalleProd)
 
 router.get('/editar/:id',productController.vistaEditarProd)
 router.put('/editar/:id',uploadFile.single('imageProductEdit'),productController.accionEditar)

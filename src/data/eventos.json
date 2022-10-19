@@ -10,12 +10,13 @@
  },
  {
   "id": 2,
-  "nombre": "Nikki Nicole Bizarrap",
+  "nombre": "Nikki Nicole Bizarrap222",
   "precio": "1500",
-  "fecha": "2022-10-02",
-  "categoria": "musica",
+  "fecha": "",
+  "categoria": "",
   "descipcion": "Nikki Nicole y Bizarrap se presentan juntos en una noche unica. ",
-  "imagen": "1666027364655_img_.png"
+  "imagen": "1666137940960_img_.jpeg",
+  "descripcion": ""
  },
  {
   "id": 3,
@@ -25,5 +26,42 @@
   "categoria": "musica",
   "descipcion": "Gorillaz en Bs As",
   "imagen": "1666042246480_img_.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Prueba211212",
+  "precio": "2000",
+  "fecha": "",
+  "categoria": "",
+  "descipcion": "Pepe",
+  "imagen": "1666137973565_img_.png",
+  "descripcion": ""
+ },
+ {
+  "id": 6,
+  "nombre": "Mari",
+  "precio": "12222",
+  "fecha": "2022-11-05",
+  "categoria": "musica",
+  "descipcion": "asdas",
+  "imagen": "1666135506791_img_.jpeg"
+ },
+ {
+  "id": 7,
+  "nombre": "Mari",
+  "precio": "12222",
+  "fecha": "2022-11-05",
+  "categoria": "teatro",
+  "descipcion": "asdas",
+  "imagen": "1666135534394_img_.jpeg"
+ },
+ {
+  "id": 8,
+  "nombre": "NTVG",
+  "precio": "1212321",
+  "fecha": "2022-10-16",
+  "categoria": "deporte",
+  "descipcion": "ASDSAD",
+  "imagen": "1666141739566_img_.png"
  }
 ]
