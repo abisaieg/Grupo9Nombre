@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil de usuario</title>
 </head>
 <body>
-    <h1>perfilusuario</h1>
+    <h1>Perfil de usuario</h1>
+    <div class="contenedor-p">
+        <h1>Información personal</h1>
+        <form action="" id="info-form">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <input type="text" name="edad" id="edad" placeholder="Edad">
+        <input type="text" name="numero-tel" id="numero-tel" placeholder="Número telefónico">
+        <input type="text" name="contraseña-actual" id="contaseña-actual" placeholder="Contraseña actual">
+        <input type="text" name="nueva-contraseña" id="nueva-contraseña" placeholder="Nueva contraseña">
+        <input type="text" name="nueva-contraseña-2" id="nueva-contraseña-2" placeholder="Repita su nueva contraseña">
+        <input type="button">
+        </form>
+    </div>
+
+    <div class="contenedor-p">
+        <h1>E-mail de cuenta</h1>
+        <form action="" id="email-form">
+        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+        <input type="text" name="apellido" id="apellido" placeholder="Repetir correo electrónico">
+        <input type="button">
+        </form>
+    </div>
+
+    <div class="contenedor-p">
+        <h1>Libreta de direcciones</h1>
+        <form action="" id="dir-form"></form>
+        <input type="text" name="nombre" id="nombre" placeholder="Dirección">
+        <input type="text" name="altura" id="altura" placeholder="Altura">
+        <input type="text" name="piso-depto" id="piso-depto" placeholder="Piso - Departamento">
+        <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+        <input type="text" name="provincia" id="provincia" placeholder="Provincia">
+        <input type="text" name="cp" id="cp" placeholder="Codigo postal">
+        <input type="text" name="tel-num" id="tel-num" placeholder="Número de teléfono">
+        <input type="textarea" name="comentario" id="comentario" placeholder="Comentario adicional">
+        <textarea name="comentario" form="dir-form">Comentario adicional</textarea>
+        <input type="button">
+        </form>
+    </div>
 </body>
 </html>
