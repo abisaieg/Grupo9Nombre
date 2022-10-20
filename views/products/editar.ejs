@@ -18,15 +18,15 @@
     <main>  
       <div class="container products-wrapper ">
         <div class="row">
-          <div class="col-12">
-            <h2 class="products-title text-center ">Formulario de editar de productos: <i><%=ProductoaEditar.nombre %></i></h2>
+          <div class="col-12 mt-2">
+            <h2 class="products-title text-center ">Formulario de edición de producto: <i><%=ProductoaEditar.nombre %></i></h2>
           </div>
         </div>
         <div class="col-12">
           <!-- ACA EL FORMULARIO TIENE UN ACTION Y UN METHOD, QUE ME DICE A DONDE ,ANDA LO QUE CREA
           Y POR QUE METODO, EN ESTE CASO LO MANDAMOS A LA RUTA CREATE AL ROUTER
            Y LO MANDAMOS CON EL METODO POST PORQUE ES DATO CRITICO -->
-          <form action="/products/editar/<%= ProductoaEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+          <form action="/products/editar/<%= ProductoaEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-control">
             <div class="row product-detail">
               <div class="col-12 col-md-6 text-center">
                 <!-- CADA NAME DE EL FORMULARIO ES EL NOMBRE DE LA VARIABLE DONDE GUARDA
@@ -35,24 +35,24 @@
                 EN EL JSON -->
                 <label for="name" class="form-label">Nombre del evento:</label>
                 <br>
-                <input value="<%=ProductoaEditar.nombre%>" type="text" id="name" name="name" placeholder="Ej: Creamfields " class="form-input">
+                <input value="<%=ProductoaEditar.nombre%>" type="text" id="name" name="name" placeholder="Ej: Creamfields " class="form-control-sm">
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="price" class="form-label text-center">Precio:</label>
                 <br>
-                <input value="<%=ProductoaEditar.precio %>" type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
+                <input value="<%=ProductoaEditar.precio %>" type="number" id="price" name="price" placeholder="Ej: 5678" class="form-control-sm">
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="description" class="form-label " required>Descipción:</label>
                 <br>
-                <textarea name="description" id="description" class="form-input textaera"><%=ProductoaEditar.descripcion %></textarea>
+                <textarea name="description" id="description" class="form-control-sm"><%=ProductoaEditar.descripcion %></textarea>
               </div>
               <div class="col-12 col-md-6 text-center">
                 <label for="category" class="form-label">Categoría:</label>
                 <br>
-                <select name="category" id="category" class="form-input">
+                <select name="category" id="category" class="form-control-sm" selected="<%=ProductoaEditar.categoria %>">
                   <option value="">Elegí</option>
-                  <option value="musica">Musica</option>
+                  <option value="musica" selected>Musica</option>
                   <option value="deportes">Deportes</option>
                   <option value="teatro">Teatro</option>
                   <option value="infantiles">infantiles</option>
@@ -62,19 +62,19 @@
               <div class="col-12 col-md-6 text-center">
                 <label for="category" class="form-label">Fecha:</label>
                 <br>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" class="form-control-sm" value="<%=ProductoaEditar.fecha %>">
               </div>
               
-              <div class="col-12 text-center">
+              <div class="col-12 col-md-6 text-center">
                 <br>
                 <label for="imageProductEdit" class="form-label">Seleccionar Imagen:</label>
                 <!-- INPUT PARA SUBIR LA IMAGEN CON EL MULTER, LE PONEMOS UN NAME -->
-                <input type="file" name="imageProductEdit"/>              
+                <input type="file" name="imageProductEdit" class="form-control-sm" accept=".png,.jpg,.jpeg,.svg"/>              
               </div>
 
               <div class="col-12 text-center">
                 <br>
-                <button type="submit" class="buy-now-button text-center">Guardar producto</button>
+                <button type="submit" class="action-button edit btn btn-warning text-black mb-4">Guardar evento</button>
               </div>
             </div>
           </form>

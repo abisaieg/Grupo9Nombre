@@ -76,13 +76,23 @@ const controller = {
 
 
 	accionEditar: (req, res) => {
-		
-		console.log(req.file);
-
 		let id = req.params.id;
-
+		if (req.file == null) {
+			for (let s of eventos){
+				if (id==s.id){
+					s.nombre= req.body.name;
+					s.precio= req.body.price;
+					s.fecha= req.body.date;
+					s.categoria= req.body.category;
+					s.descripcion= req.body.description;
+					s.imagen = s.imagen;
+					break;
+				}
+			}
+		}
+		else {
+		console.log(req.file);
 		let nombreImagen = req.file.filename;
-
 		for (let s of eventos){
 			if (id==s.id){
 				s.nombre= req.body.name;
@@ -94,10 +104,11 @@ const controller = {
 				break;
 			}
 		}
-
+	}
 		fs.writeFileSync(pathProductDb, JSON.stringify(eventos,null,' '));
 
 		res.redirect('/');
+
 	},
 
 	accionEliminar: (req, res) => {

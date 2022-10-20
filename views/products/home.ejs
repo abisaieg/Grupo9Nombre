@@ -63,7 +63,6 @@
 
   <h3 class="categoria-title" id="teatro">Teatro:</h3>
   <div class="tarjetas">
-    <%= evento[0].nombre %>
     <% evento.forEach(element => { %>
       <% if (element.categoria == "teatro") { %>
         <a href="/products/descripcion/<%= element.id %>">
