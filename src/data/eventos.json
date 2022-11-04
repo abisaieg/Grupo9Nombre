@@ -21,7 +21,7 @@
  {
   "id": 3,
   "nombre": "Gorillaz",
-  "precio": "1500",
+  "precio": "2000000",
   "fecha": "2022-11-06",
   "categoria": "musica",
   "descipcion": "Gorillaz en Bs As",
@@ -64,5 +64,14 @@
   "categoria": "deporte",
   "descipcion": "ASDSAD",
   "imagen": "1666141739566_img_.png"
+ },
+ {
+  "id": 9,
+  "nombre": "they live",
+  "precio": "12",
+  "fecha": "2022-11-05",
+  "categoria": "infantiles",
+  "descipcion": "horror",
+  "imagen": "1667602694478_img_.jpg"
  }
 ]

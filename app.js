@@ -1,3 +1,9 @@
+// arrancar el proyecto
+// 1-npm install
+// 2-npm install multer
+// ARRANCAR CON npm start
+
+
 const express = require("express")
 const path = require("path")
 const app = express()
