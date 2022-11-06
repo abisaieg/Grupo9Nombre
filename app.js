@@ -1,6 +1,8 @@
 // arrancar el proyecto
 // 1-npm install
 // 2-npm install multer
+// USAR HASHIN
+// 3 instalar npm install bcryptjs
 // ARRANCAR CON npm start
 
 

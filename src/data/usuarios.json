@@ -16,5 +16,14 @@
   "pais": "argentina",
   "contrasena": "moto",
   "imagen": "1667603048817_img_.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "hashing",
+  "email": "jordi@hotmail.com",
+  "direccion": "hashing",
+  "pais": "hashing",
+  "contrasena": "$2a$10$JqREZ553ttHKCpTh5IwsYu2an9rNu3ECqNNVo5pF6AHDBciMJEBeq",
+  "imagen": "1667775099579_img_.jpg"
  }
 ]

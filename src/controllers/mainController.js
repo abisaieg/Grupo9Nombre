@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
+// aca exportamos a hashing, esta linea solo va en el donde usamos contraseñas encriptadas
+const bcrypt = require('bcryptjs');
+
 // JSON USUARIOS, GUARDO EN UNA VARIABLE EL JSON DE USUARIOS PARA SUBIR USUARIOS
 const pathUsertDb = path.join(__dirname, '../data/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(pathUsertDb, 'utf-8'));
@@ -44,7 +47,7 @@ accionGuardar: (req, res) => {
         email: req.body.email, 
         direccion: req.body.adress,
         pais: req.body.country,
-        contrasena:req.body.password,
+        contrasena:bcrypt.hashSync(req.body.password,10),
         // aca guarda la variable asignada arriba
         imagen: nombreImagen
     };
