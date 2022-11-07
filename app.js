@@ -1,9 +1,15 @@
 // arrancar el proyecto
 // 1-npm install
-// 2-npm install multer
-// USAR HASHIN
-// 3 instalar npm install bcryptjs
+// 2-npm install multer (MULTER)
+// 3 instalar npm install bcryptjs(HASHING, encriptar claves)
+// 4 npm install express-validator (express validator)
 // ARRANCAR CON npm start
+
+// USAR EN LOGIN PARA COMPARAR CONTRASEÑAS CON HASHING SI SON  LA MISMA PARA PODER ACCEDER
+// este comando usamos para comapra la contraseña encriptada y la no encriptada y te dice si es la misma
+// bcrypt.compareSync('micontraseña', passEncriptada); 
+
+
 
 
 const express = require("express")

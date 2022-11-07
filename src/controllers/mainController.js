@@ -3,6 +3,11 @@ const fs = require('fs');
 
 // aca exportamos a hashing, esta linea solo va en el donde usamos contraseñas encriptadas
 const bcrypt = require('bcryptjs');
+// importamos express validator
+const { validationResult } = require('express-validator');
+
+
+
 
 // JSON USUARIOS, GUARDO EN UNA VARIABLE EL JSON DE USUARIOS PARA SUBIR USUARIOS
 const pathUsertDb = path.join(__dirname, '../data/usuarios.json');
@@ -57,6 +62,28 @@ accionGuardar: (req, res) => {
     fs.writeFileSync(pathUsertDb, JSON.stringify(usuarios,null,' '));
 
     res.redirect('/');
+},
+
+login: (req, res) => {
+    res.render('accounts/login');
+},
+
+loginValidator: (req, res) => {
+    // cuardo el array de validaciones
+    let errors = validationResult(req);
+
+    // si el array de validaciones esta vacio es que todos los campos estan ok
+    if ( errors.isEmpty() ) {
+        for(let i=0;i<usuarios.length;i++){
+            if(usuarios[i].email==req.body.emaiLogin){
+                if(bcrypt.compareSync(req.body.passwordLogin, usuarios[i].contrasena)){
+                    res.render("accounts/perfil")
+                }
+            }
+        }
+        }
+        // aca le pasa el array de errores a la vista de login
+        else{res.render('accounts/login', {errors: errors.array() } )}
 },
 }
 module.exports = controller;

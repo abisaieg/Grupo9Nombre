@@ -1,9 +1,12 @@
 // ************ Require's ************
 const express = require('express');
 const router = express.Router();
+// requerimos multer
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+//requerimos express validator
+const { body } = require('express-validator');
 
 const storage = multer.diskStorage({
     destination: function (req,file,cb){
@@ -14,7 +17,15 @@ const storage = multer.diskStorage({
     },
 })
 
+// constante de multer
 const uploadFile = multer({storage})
+
+// constante de express validator, es un array de validaciones de campos vacios
+// en body va el name de cada imput del formulario
+let validaciones = [
+    body('email').notEmpty().withMessage('email vacio').isEmail,
+    body('password').notEmpty().withMessage('password vacio'),
+]
 
 // ************ Controller Require ************
 const mainController = require('../controllers/mainController');
@@ -22,6 +33,11 @@ const mainController = require('../controllers/mainController');
 // HOME
 router.get('/', mainController.index); 
 router.get('/home',mainController.index)
+
+// LOGIN
+router.get('/login', mainController.login);
+// ruta que le paso el array de validaciones para Express Validator
+router.post('/login', validaciones , mainController.loginValidator);
 
 // REGISTRARSE
 router.get('/register',mainController.vistaCrearUsuario)

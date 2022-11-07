@@ -25,5 +25,14 @@
   "pais": "hashing",
   "contrasena": "$2a$10$JqREZ553ttHKCpTh5IwsYu2an9rNu3ECqNNVo5pF6AHDBciMJEBeq",
   "imagen": "1667775099579_img_.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "061122",
+  "email": "lucasmurcielago2@hotmail.com.ar",
+  "direccion": "061122",
+  "pais": "061122",
+  "contrasena": "$2a$10$1LtpAWglGMwtuy9Bc35nw.5w8JlAcnctaioKVPu./jnWJWFE2x4Gy",
+  "imagen": "1667780713146_img_.jpg"
  }
 ]

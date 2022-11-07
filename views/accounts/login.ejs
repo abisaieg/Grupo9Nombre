@@ -15,7 +15,7 @@
 </head>
 <body>
   <%- include('../partials/header') %>
-    <!--FORM-->
+
     <div class="container card contenedor">
       <div class="row">
           <div class="col-4 img-log card">
@@ -23,16 +23,30 @@
           <div class="col-8"><div class="divform">
               <h3 class="titulo-login-register">Iniciar Sesión</h1> <hr>
                 <div class="formu">
-              <form>
+              <!-- FORMULARIO -->
+              <!-- redirigimos a la ruta login para que entre al validador, con metodo POST -->
+              <form action="/login" method="POST">
                 <div class="row mb-3">
                   <div>
-                    <input type="email" class="form-control formuinput" placeholder="Email" id="inputPassword">
+                    <!-- a cada imput le pones un name -->
+                    <input type="email" name="emailLogin" class="form-control formuinput" placeholder="Email" id="inputPassword">
+                    <% if (locals && locals.errors) { %>
+                      <% if (locals.errors[0].param=="emailLogin") { %>
+                        <h3 style="color:red"> <%= locals.errors[0].msg %>  </h3> 
+                      <% } %>
+                    <% } %>
                   </div>
                 </div>
 
                   <div class="row mb-3">
                       <div>
-                        <input type="password" class="form-control formuinput" placeholder="Contraseña" id="inputPassword">
+                        <!-- a cada imput le pones un name -->
+                        <input type="password" name="passwordLogin" class="form-control formuinput" placeholder="Contraseña" id="inputPassword">
+                        <% if (locals && locals.errors) { %>
+                          <% if (locals.errors[0].param=="passwordLogin") { %>
+                            <h3 style="color:red"> <%= locals.errors[0].msg %>  </h3> 
+                          <% } %>
+                        <% } %>
                       </div>
                     </div>
                  
