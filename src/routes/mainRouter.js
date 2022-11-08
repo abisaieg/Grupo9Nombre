@@ -23,8 +23,8 @@ const uploadFile = multer({storage})
 // constante de express validator, es un array de validaciones de campos vacios
 // en body va el name de cada imput del formulario
 let validaciones = [
-    body('email').notEmpty().withMessage('email vacio').isEmail,
-    body('password').notEmpty().withMessage('password vacio'),
+    body('emailLogin').notEmpty().withMessage('email vacio'),
+    body('passwordLogin').notEmpty().withMessage('password vacio'),
 ]
 
 // ************ Controller Require ************

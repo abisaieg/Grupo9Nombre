@@ -7,15 +7,12 @@ const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
 
-
-
 // JSON USUARIOS, GUARDO EN UNA VARIABLE EL JSON DE USUARIOS PARA SUBIR USUARIOS
 const pathUsertDb = path.join(__dirname, '../data/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(pathUsertDb, 'utf-8'));
 
 // JSON USUARIOS, GUARDO EN UNA VARIABLE EL JSON DE PRODUCTOS PARA MOSTRAR LOS PRODUCTOS
 const pathProductDb = path.join(__dirname, '../data/eventos.json');
-const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 
 
 
@@ -52,6 +49,7 @@ accionGuardar: (req, res) => {
         email: req.body.email, 
         direccion: req.body.adress,
         pais: req.body.country,
+        // guardo la contraseña con hash
         contrasena:bcrypt.hashSync(req.body.password,10),
         // aca guarda la variable asignada arriba
         imagen: nombreImagen
@@ -69,15 +67,23 @@ login: (req, res) => {
 },
 
 loginValidator: (req, res) => {
+
     // cuardo el array de validaciones
     let errors = validationResult(req);
+    console.log("errors ", errors)
+    let emailLogin=req.body.emailLogin
+    let passwordLogin=req.body.passwordLogin
+    console.log("email y pass del login")
+    console.log(emailLogin)
+    console.log(passwordLogin)
 
     // si el array de validaciones esta vacio es que todos los campos estan ok
     if ( errors.isEmpty() ) {
         for(let i=0;i<usuarios.length;i++){
-            if(usuarios[i].email==req.body.emaiLogin){
-                if(bcrypt.compareSync(req.body.passwordLogin, usuarios[i].contrasena)){
-                    res.render("accounts/perfil")
+            if(usuarios[i].email==emailLogin){
+                if(bcrypt.compareSync(passwordLogin, usuarios[i].contrasena)){
+                    res.render('accounts/perfil');
+                    break;
                 }
             }
         }
