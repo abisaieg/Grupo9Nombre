@@ -23,6 +23,10 @@ index: (req, res) => {
     res.render('products/home',{evento: eventos})
 },
 
+perfil: (req, res) => {
+    res.render('accounts/perfil',{usuario: usuarios})
+},
+
 vistaCrearUsuario: (req, res) => {
     res.render('accounts/registrarse')
 },
