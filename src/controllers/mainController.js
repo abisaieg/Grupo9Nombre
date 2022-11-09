@@ -86,8 +86,9 @@ loginValidator: (req, res) => {
         for(let i=0;i<usuarios.length;i++){
             if(usuarios[i].email==emailLogin){
                 if(bcrypt.compareSync(passwordLogin, usuarios[i].contrasena)){
-                    res.render('accounts/perfil');
-                    break;
+                    let usuarioEncontrado=usuarios[i];
+                    res.render('accounts/perfil',{usuarioPerfil: usuarioEncontrado});
+                                break;
                 }
             }
         }

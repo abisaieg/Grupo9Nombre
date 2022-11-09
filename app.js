@@ -5,9 +5,13 @@
 // 4 npm install express-validator (express validator)
 // ARRANCAR CON npm start
 
-// USAR EN LOGIN PARA COMPARAR CONTRASEÑAS CON HASHING SI SON  LA MISMA PARA PODER ACCEDER
-// este comando usamos para comapra la contraseña encriptada y la no encriptada y te dice si es la misma
-// bcrypt.compareSync('micontraseña', passEncriptada); 
+// preguntar el jueves a los profes
+// 1 la validacion funciona, si es correcta entra pero si no es correcta se queda pensando, ver como puedo
+// enviar un mensaje de contraseña incorrecta al login
+// 2 ver como elimianr el router de users ya que arme todo la funcionalidad de usuarios en el main router y main
+// controller, ver de quitar el userRouter y userController sin que pinche las vistas de usuarios
+// 3 ver como hacer para que la vista de perfil de usuario quede mostrando el perfil ingresado correctamente
+// 4 ver bien la cantidad de validaciones que tiene que hacer y como, solo tiene la de campo vacio
 
 
 const express = require("express")

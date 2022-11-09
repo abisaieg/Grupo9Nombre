@@ -1,11 +1,22 @@
 [
  {
-  "id": 1,
-  "nombre": "081122",
+  "id": 2,
+  "nombre": "Bob",
+  "apellido": "Esponja",
+  "email": "contrasenapez@hotmail.com",
+  "direccion": "Corrientes 2031",
+  "pais": "Fondo de Bikini",
+  "contrasena": "$2a$10$HceYaBdDYjFwyt.IOvHVRODaHCbloLT810aeO5LPguYGxVCfhCQqO",
+  "imagen": "1667951592192_img_.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Satan",
+  "apellido": "Gomez",
   "email": "contrasenamoto@hotmail.com",
-  "direccion": "081122",
-  "pais": "081122",
-  "contrasena": "$2a$10$XkqxTa2pzHyqD8uyAkBJMeE/HOmCLfp1yZzlCDWYDICbyDgcPQNaq",
-  "imagen": "1667879806901_img_.jpg"
+  "direccion": "Stutgard 231",
+  "pais": "Checoslovakia",
+  "contrasena": "$2a$10$ki5cNa.cUg.ugpqBZJa8ceIVbeTW9M11C5Hf4nxEcI8.yi3ksk1HG",
+  "imagen": "1667952112695_img_.jpg"
  }
 ]
