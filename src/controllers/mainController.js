@@ -90,6 +90,8 @@ loginValidator: (req, res) => {
                     res.render('accounts/perfil',{usuarioPerfil: usuarioEncontrado});
                                 break;
                 }
+                // renderiga el login de nuevo en caso de
+                else{res.render('accounts/login' )}
             }
         }
         }

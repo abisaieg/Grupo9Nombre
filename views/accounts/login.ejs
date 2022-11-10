@@ -32,7 +32,7 @@
                     <input type="email" name="emailLogin" class="form-control formuinput" placeholder="Email" id="inputPassword">
                     <% if (locals && locals.errors) { %>
                       <% if (locals.errors[0].param=="emailLogin") { %>
-                        <h3 style="color:red"> <%= locals.errors[0].msg %>  </h3> 
+                        <h4 style="color:red"> <%= locals.errors[0].msg %>  </h4> 
                       <% } %>
                     <% } %>
                   </div>
@@ -44,7 +44,7 @@
                         <input type="password" name="passwordLogin" class="form-control formuinput" placeholder="Contraseña" id="inputPassword">
                         <% if (locals && locals.errors) { %>
                           <% if (locals.errors[0].param=="passwordLogin") { %>
-                            <h3 style="color:red"> <%= locals.errors[0].msg %>  </h3> 
+                            <h4 style="color:red"> <%= locals.errors[0].msg %>  </h4> 
                           <% } %>
                         <% } %>
                       </div>
