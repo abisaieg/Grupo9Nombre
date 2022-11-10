@@ -7,11 +7,13 @@
 
 // preguntar el jueves a los profes
 // 1 la validacion funciona, si es correcta entra pero si no es correcta se queda pensando, ver como puedo
-// enviar un mensaje de contraseña incorrecta al login
+// enviar un mensaje de contraseña incorrecta al login, tengo que usar un while que englobe todo?
+
 // 2 ver como elimianr el router de users ya que arme todo la funcionalidad de usuarios en el main router y main
 // controller, ver de quitar el userRouter y userController sin que pinche las vistas de usuarios
+
 // 3 ver como hacer para que la vista de perfil de usuario quede mostrando el perfil ingresado correctamente
-// 4 ver bien la cantidad de validaciones que tiene que hacer y como, solo tiene la de campo vacio
+
 
 
 const express = require("express")

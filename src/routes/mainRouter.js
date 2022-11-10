@@ -23,7 +23,7 @@ const uploadFile = multer({storage})
 // constante de express validator, es un array de validaciones de campos vacios
 // en body va el name de cada imput del formulario
 let validaciones = [
-    body('emailLogin').notEmpty().withMessage('email vacio'),
+    body('emailLogin').isEmail().notEmpty().withMessage('email vacio'),
     body('passwordLogin').notEmpty().withMessage('password vacio'),
 ]
 
@@ -44,6 +44,7 @@ router.get('/register',mainController.vistaCrearUsuario)
 router.post('/register',uploadFile.single('imageProduct'),mainController.accionGuardar) //guardar un nuevo usuario
 
 // PERFIL DE USUARIO
-router.get('/perfil/:id', mainController.perfil); 
+router.get('/perfil/:id', mainController.perfil);
+
 
 module.exports = router;

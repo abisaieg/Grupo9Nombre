@@ -18,5 +18,15 @@
   "pais": "Checoslovakia",
   "contrasena": "$2a$10$ki5cNa.cUg.ugpqBZJa8ceIVbeTW9M11C5Hf4nxEcI8.yi3ksk1HG",
   "imagen": "1667952112695_img_.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Julio",
+  "apellido": "Iglesias",
+  "email": "contrasenarbol@hotmail.com",
+  "direccion": "Zan Bayon 123",
+  "pais": "China",
+  "contrasena": "$2a$10$CJXhphwRU5uIYWCubMAH5e1t7kAbinLdKhZar0KCCLN/togoDlhQ.",
+  "imagen": "1667953481032_img_.jpg"
  }
 ]
