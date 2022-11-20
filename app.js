@@ -3,6 +3,9 @@
 // 2-npm install multer (MULTER)
 // 3 instalar npm install bcryptjs(HASHING, encriptar claves)
 // 4 npm install express-validator (express validator)
+// 5 npm install sequelize-cli 
+// 6 npm install sequelize
+// 7 npm install mysql2
 // ARRANCAR CON npm start
 
 // preguntar el jueves a los profes
