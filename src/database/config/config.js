@@ -1,10 +1,11 @@
-{
+module.exports = {
   "development": {
     "username": "root",
     "password": null,
-    "database": "database_development",
+    "database": "perventodb",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3306 // esto se lo agregue yo porque el ejemplo de jero lo tenia 
   },
   "test": {
     "username": "root",

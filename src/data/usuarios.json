@@ -28,5 +28,15 @@
   "pais": "China",
   "contrasena": "$2a$10$CJXhphwRU5uIYWCubMAH5e1t7kAbinLdKhZar0KCCLN/togoDlhQ.",
   "imagen": "1667953481032_img_.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "201122",
+  "apellido": "201122",
+  "email": "contrasenagato@hotmail.com",
+  "direccion": "201122",
+  "pais": "201122",
+  "contrasena": "$2a$10$JCrYaGN5nxY99secV4t.aeE5bJYRQzsB5VqoIY1UVoArTglNUwjw2",
+  "imagen": "1668992992377_img_.png"
  }
 ]
