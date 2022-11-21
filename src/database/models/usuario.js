@@ -22,7 +22,25 @@ function usuarioData(sequelize, Datatypes){
     const usuario = sequelize.define(a,c,cg)
 
     // relaciones de la tabla
-    usuario.associate = function (modelos){}
+    usuario.associate = function (modelos){
+
+       // RELACION EVENTO
+       usuario.hasMany(modelos.evento, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Evento",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
+        foreignKey: "admin_id"
+      });
+
+      // RELACION VENTA
+      usuario.hasMany(modelos.venta, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Venta",
+        // clave foranea que los une
+        foreignKey: "usuario_id"
+      });
+      
+    }
   
     // retorno la variable peliculas
     return usuario;

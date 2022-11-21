@@ -8,8 +8,8 @@ function entradaData(sequelize, Datatypes){
     // sequalize
     let c = {
       id: {type: Datatypes.INTEGER, primaryKey: true, autoIncrement: true},
-      Evento_id: { type: Datatypes.INTEGER},
-      Sector_id: { type: Datatypes.INTEGER},
+      evento_id: { type: Datatypes.INTEGER},
+      sector_id: { type: Datatypes.INTEGER},
       precio : { type: Datatypes.FLOAT},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
@@ -20,7 +20,33 @@ function entradaData(sequelize, Datatypes){
     const entrada = sequelize.define(a,c,cg)
 
     // relaciones de la tabla
-    entrada.associate = function (modelos){}
+    entrada.associate = function (modelos){
+
+      // RELACION SECTOR
+      entrada.belongsTo(modelos.sector, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Sector",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "sector_id"
+      });
+
+      // RELACION EVENTO
+      entrada.belongsTo(modelos.evento, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Evento",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "evento_id"
+      });
+
+      // RELACION VENTA
+      entrada.hasMany(modelos.venta, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Venta",
+        // clave foranea que los une
+        foreignKey: "entrada_id"
+      });
+      
+    }
   
     // retorno la variable peliculas
     return entrada;

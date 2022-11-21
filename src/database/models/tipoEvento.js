@@ -19,12 +19,12 @@ function tipoEventoData(sequelize, Datatypes){
 
     // relaciones de la tabla
     tipoEvento.associate = function (modelos){
-        // aca va tabla que conecta
-        evento.hasMany(modelos.evento, {   
+        // RELACION EVENTO
+        tipoEvento.hasMany(modelos.evento, {   
           // alias que yo quiera, le pegue el mismo nombre que la tavle
           as: "Evento",
           // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
-          foreignKey: "Tipo_evento_id"
+          foreignKey: "tipo_evento_id"
         });
     }
   

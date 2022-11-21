@@ -9,8 +9,8 @@
 // ARRANCAR CON npm start
 
 // notas
-// en el archivo src/database/config/config.js agregue le puerto 3306 que por defaul no me lo creo
-// ojo con esto, si pincha el codigo SACARLO
+
+
 
 
 // puntos a ver 
@@ -19,6 +19,15 @@
 // controller, ver de quitar el userRouter y userController sin que pinche las vistas de usuarios
 
 // 2 ver como hacer para que la vista de perfil de usuario quede mostrando el perfil ingresado correctamente
+
+// 3 en el archivo src/database/config/config.js agregue le puerto 3306 que por defaul no me lo creo
+// ojo con esto, si pincha el codigo SACARLO
+
+// 4 en las relaciones de los modelos, ver si la clave foranea que relaciona evento y usuario es admin_id como figura
+// en la base o si debo poner Usuario_id (que seria el alias de la tabla de la clave foranea + id)
+
+// 5 ver si en las relaciones en el tema de las foreign key toma o no mayusculas, ejemplo la relacion entre tabla
+// evento y entrada que la clave foranea de vento es entrada_id
 
 
 

@@ -26,22 +26,41 @@ function eventoData(sequelize, Datatypes){
     // en la variable peliculas 
     const evento = sequelize.define(a,c,cg)
 
-    // relaciones de la tabla
+    // RELACION TIPO EVENTO
     evento.associate = function (modelos){
       // aca va tabla que conecta
       evento.belongsTo(modelos.tipoEvento, {   
         // alias que yo quiera, le pegue el mismo nombre que la tavle
         as: "Tipo_evento",
         // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-        foreignKey: "Tipo_evento_id"
+        foreignKey: "tipo_evento_id"
       });
 
+      // RELACION CIUDAD
       evento.belongsTo(modelos.ciudad, {   
         // alias que yo quiera, le pegue el mismo nombre que la tavle
         as: "Ciudad",
         // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-        foreignKey: "Ciudad_id"
+        foreignKey: "ciudad_id"
       });
+
+      // RELACION USUARIO
+      evento.belongsTo(modelos.usuario, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Usuario",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "admin_id"
+      });
+
+      // RELACION ENTRADA
+      evento.hasMany(modelos.entrada, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Entrada",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "evento_id"
+      });
+
+
 
     }
   

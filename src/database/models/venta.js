@@ -10,8 +10,8 @@ function ventaData(sequelize, Datatypes){
       id: {type: Datatypes.INTEGER, primaryKey: true, autoIncrement: true},
       monto_unitario: {type: Datatypes.FLOAT},
       cantidad: { type: Datatypes.INTEGER},
-      Usuario_id: { type: Datatypes.INTEGER},
-      Entrada_id: { type: Datatypes.INTEGER},
+      usuario_id: { type: Datatypes.INTEGER},
+      entrada_id: { type: Datatypes.INTEGER},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
     let cg = {camelCase: false, timestamps: false}; 
@@ -21,7 +21,24 @@ function ventaData(sequelize, Datatypes){
     const venta = sequelize.define(a,c,cg)
 
     // relaciones de la tabla
-    venta.associate = function (modelos){}
+    venta.associate = function (modelos){
+
+      // RELACION ENTRADA
+      venta.belongsTo(modelos.entrada, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Entrada",
+        // clave foranea que los une
+        foreignKey: "entrada_id"
+      });
+
+      // RELACION USUARIO
+      venta.belongsTo(modelos.usuario, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Usuario",
+        // clave foranea que los une
+        foreignKey: "usuario_id"
+      });
+    }
   
     // retorno la variable peliculas
     return venta;
