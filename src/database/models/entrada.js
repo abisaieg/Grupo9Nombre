@@ -18,6 +18,9 @@ function entradaData(sequelize, Datatypes){
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 
     const entrada = sequelize.define(a,c,cg)
+
+    // relaciones de la tabla
+    entrada.associate = function (modelos){}
   
     // retorno la variable peliculas
     return entrada;

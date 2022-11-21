@@ -25,6 +25,25 @@ function eventoData(sequelize, Datatypes){
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 
     const evento = sequelize.define(a,c,cg)
+
+    // relaciones de la tabla
+    evento.associate = function (modelos){
+      // aca va tabla que conecta
+      evento.belongsTo(modelos.tipoEvento, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Tipo_evento",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "Tipo_evento_id"
+      });
+
+      evento.belongsTo(modelos.ciudad, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "Ciudad",
+        // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
+        foreignKey: "Ciudad_id"
+      });
+
+    }
   
     // retorno la variable peliculas
     return evento;
