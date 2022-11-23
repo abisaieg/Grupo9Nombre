@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
+// requerimiento del modelo de base de datos 
+const db = require('../database/models');
+
 const pathProductDb = path.join(__dirname, '../data/eventos.json');
 const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 

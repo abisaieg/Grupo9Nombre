@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
+// requerimiento del modelo de base de datos
+const db = require('../database/models');
+
 // aca exportamos a hashing, esta linea solo va en el donde usamos contraseñas encriptadas
 const bcrypt = require('bcryptjs');
 // importamos express validator
@@ -21,6 +24,18 @@ const controller = {
 index: (req, res) => {
     const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
     res.render('products/home',{evento: eventos})
+
+		// db.evento.findAll().then((evento) =>{
+
+		// 	let listaEventos=[];
+
+		// 	for (eventos of evento){
+		// 		listaEventos.push(eventos);
+		// 	}
+
+        //     res.render('products/home',{eventos: listaEventos})
+
+		// });
 },
 
 perfil: (req, res) => {

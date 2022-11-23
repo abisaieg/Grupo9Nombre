@@ -1,7 +1,7 @@
 
 function ventaData(sequelize, Datatypes){
     // nombre de la tabla, igual al nombre de la tabla en la base de datos
-    let a = 'Venta';
+    let a = 'venta';
   
     // todos las columnas que va a tener esa tabla, debemos indicar el tipo de dato de cada tabla que 
     // debe tener, debemos ver que tipo de de dato de sequalize corresponde con el tipo de dato de lbd, ver la doc de
@@ -14,7 +14,7 @@ function ventaData(sequelize, Datatypes){
       entrada_id: { type: Datatypes.INTEGER},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false}; 
+    let cg = {camelCase: false, timestamps: false,tableName:"Venta"}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 
@@ -23,21 +23,21 @@ function ventaData(sequelize, Datatypes){
     // relaciones de la tabla
     venta.associate = function (modelos){
 
-      // RELACION ENTRADA
-      venta.belongsTo(modelos.entrada, {   
-        // alias que yo quiera, le pegue el mismo nombre que la tavle
-        as: "Entrada",
-        // clave foranea que los une
-        foreignKey: "entrada_id"
-      });
+      // // RELACION ENTRADA
+      // venta.belongsTo(modelos.entrada, {   
+      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
+      //   as: "entrada",
+      //   // clave foranea que los une
+      //   foreignKey: "entrada_id"
+      // });
 
-      // RELACION USUARIO
-      venta.belongsTo(modelos.usuario, {   
-        // alias que yo quiera, le pegue el mismo nombre que la tavle
-        as: "Usuario",
-        // clave foranea que los une
-        foreignKey: "usuario_id"
-      });
+      // // RELACION USUARIO
+      // venta.belongsTo(modelos.usuario, {   
+      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
+      //   as: "usuario",
+      //   // clave foranea que los une
+      //   foreignKey: "usuario_id"
+      // });
     }
   
     // retorno la variable peliculas

@@ -1,7 +1,7 @@
 
 function usuarioData(sequelize, Datatypes){
     // nombre de la tabla, igual al nombre de la tabla en la base de datos
-    let a = 'Usuario';
+    let a = 'usuario';
   
     // todos las columnas que va a tener esa tabla, debemos indicar el tipo de dato de cada tabla que 
     // debe tener, debemos ver que tipo de de dato de sequalize corresponde con el tipo de dato de lbd, ver la doc de
@@ -15,7 +15,7 @@ function usuarioData(sequelize, Datatypes){
       admin: {type: Datatypes.BOOLEAN},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false}; 
+    let cg = {camelCase: false, timestamps: false,tableName:"Usuario"}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 
@@ -24,21 +24,21 @@ function usuarioData(sequelize, Datatypes){
     // relaciones de la tabla
     usuario.associate = function (modelos){
 
-       // RELACION EVENTO
-       usuario.hasMany(modelos.evento, {   
-        // alias que yo quiera, le pegue el mismo nombre que la tavle
-        as: "Evento",
-        // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
-        foreignKey: "admin_id"
-      });
+      //  // RELACION EVENTO
+      //  usuario.hasMany(modelos.evento, {   
+      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
+      //   as: "evento",
+      //   // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
+      //   foreignKey: "admin_id"
+      // });
 
-      // RELACION VENTA
-      usuario.hasMany(modelos.venta, {   
-        // alias que yo quiera, le pegue el mismo nombre que la tavle
-        as: "Venta",
-        // clave foranea que los une
-        foreignKey: "usuario_id"
-      });
+      // // RELACION VENTA
+      // usuario.hasMany(modelos.venta, {   
+      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
+      //   as: "venta",
+      //   // clave foranea que los une
+      //   foreignKey: "usuario_id"
+      // });
       
     }
   
