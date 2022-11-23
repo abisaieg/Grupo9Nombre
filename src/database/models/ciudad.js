@@ -20,12 +20,13 @@ function ciudadData(sequelize, Datatypes){
     // relaciones de la tabla
     ciudad.associate = function (modelos){
         // // RELACION EVENTO
-        // ciudad.hasMany(modelos.evento, {   
-        //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-        //   as: "evento",
-        //   // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
-        //   foreignKey: "ciudad_id"
-        // });
+        // aca va alias de tabla que conecta
+        ciudad.hasMany(modelos.evento, {   
+          // alias que yo quiera, le pegue el mismo nombre que la tavle
+          as: "evento",
+           // clave foranea como esta en el modelo
+          foreignKey: "ciudad_id"
+        });
     }
 
 

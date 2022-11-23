@@ -19,13 +19,14 @@ function sectorData(sequelize, Datatypes){
 
     // relaciones de la tabla
     sector.associate = function (modelos){
-      // RELACION EVENTRADA
-      // sector.hasMany(modelos.entrada, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "entrada",
-      //   // clave foranea, pero tengo que poner el alias de la tabla contraria + id, ver en el archivo contrartio el alias
-      //   foreignKey: "sector_id"
-      // });
+      // RELACION ENTRADA
+      // aca va alias de tabla que conecta
+      sector.hasMany(modelos.entrada, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "entrada",
+        // clave foranea como esta en el modelo
+        foreignKey: "sector_id"
+      });
 
     }
   

@@ -9,9 +9,24 @@ const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 
 
 const controller = {
+	// funciona con base de datos
 	vistaListadoProd: (req, res) => {
-		const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
-		res.render('products/home',{evento: eventos})
+		// const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
+		// res.render('products/home',{evento: eventos})
+
+		// las llamadas de las tablas se hacen por el alias
+		db.evento.findAll().then((evento) =>{
+
+			let listaEventos=[];
+
+			for (eventosbd of evento){
+				listaEventos.push(eventosbd);
+			}
+
+            // console.log(listaEventos)
+            res.render('products/home',{evento: listaEventos})
+
+		});
 	},
 	vistaCrearProd: (req, res) => {
 		res.render('products/crear')
@@ -55,8 +70,7 @@ const controller = {
 
 		idNuevo++;
 
-		// aca lo que hace el req.file.filename es traerme el nombre de la imagen
-		// y guardarl oen una variable, cuando guardamos el producto es el nombre que guarda
+		// req.file.filename  trae el nombre de la imagen y guarda en una variable
 		let nombreImagen = req.file.filename;
 
 		let productoNuevo =  {
@@ -66,7 +80,6 @@ const controller = {
 			fecha: req.body.date, 
 			categoria: req.body.category,
 			descipcion: req.body.description,
-			// aca guarda la variable asignada arriba
 			imagen: nombreImagen
 		};
 

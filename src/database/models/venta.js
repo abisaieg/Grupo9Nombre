@@ -23,21 +23,23 @@ function ventaData(sequelize, Datatypes){
     // relaciones de la tabla
     venta.associate = function (modelos){
 
-      // // RELACION ENTRADA
-      // venta.belongsTo(modelos.entrada, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "entrada",
-      //   // clave foranea que los une
-      //   foreignKey: "entrada_id"
-      // });
+      // RELACION ENTRADA
+      // aca va alias de tabla que conecta
+      venta.belongsTo(modelos.entrada, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "entrada",
+        // clave foranea que los une
+        foreignKey: "entrada_id"
+      });
 
-      // // RELACION USUARIO
-      // venta.belongsTo(modelos.usuario, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "usuario",
-      //   // clave foranea que los une
-      //   foreignKey: "usuario_id"
-      // });
+      // RELACION USUARIO
+       // aca va alias de tabla que conecta
+      venta.belongsTo(modelos.usuario, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "usuario",
+        // clave foranea que los une
+        foreignKey: "usuario_id"
+      });
     }
   
     // retorno la variable peliculas

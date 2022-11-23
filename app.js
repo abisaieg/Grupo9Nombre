@@ -6,6 +6,7 @@
 // 5 npm install sequelize-cli 
 // 6 npm install sequelize
 // 7 npm install mysql2
+// 8 npm install dotenv(alwaysdata)
 // ARRANCAR CON npm start
 
 // notas

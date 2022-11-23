@@ -26,39 +26,43 @@ function eventoData(sequelize, Datatypes){
     // en la variable peliculas 
     const evento = sequelize.define(a,c,cg)
 
-    // RELACION TIPO EVENTO
+  
     evento.associate = function (modelos){
-      // // aca va tabla que conecta
-      // evento.belongsTo(modelos.tipoEvento, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "tipo_evento",
-      //   // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-      //   foreignKey: "tipo_evento_id"
-      // });
+      // RELACION TIPO EVENTO
+      // aca va alias de tabla que conecta
+      evento.belongsTo(modelos.tipo_evento, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "tipo_evento",
+        // clave foranea como esta en el modelo
+        foreignKey: "tipo_evento_id"
+      });
 
-      // // RELACION CIUDAD
-      // evento.belongsTo(modelos.ciudad, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "ciudad",
-      //   // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-      //   foreignKey: "ciudad_id"
-      // });
+      // RELACION CIUDAD
+      // aca va alias de tabla que conecta
+      evento.belongsTo(modelos.ciudad, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "ciudad",
+         // clave foranea como esta en el modelo
+        foreignKey: "ciudad_id"
+      });
 
-      // // RELACION USUARIO
-      // evento.belongsTo(modelos.usuario, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "usuario",
-      //   // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-      //   foreignKey: "admin_id"
-      // });
+      // RELACION USUARIO
+      // aca va alias de tabla que conecta
+      evento.belongsTo(modelos.usuario, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "usuario",
+        // clave foranea como esta en el modelo
+        foreignKey: "admin_id"
+      });
 
-      // // RELACION ENTRADA
-      // evento.hasMany(modelos.entrada, {   
-      //   // alias que yo quiera, le pegue el mismo nombre que la tavle
-      //   as: "entrada",
-      //   // clave foranea, pero tengo que poner el alias de la tabla contraria, ver en el archivo contrartio
-      //   foreignKey: "evento_id"
-      // });
+      // RELACION ENTRADA
+       // aca va alias de tabla que conecta
+      evento.hasMany(modelos.entrada, {   
+        // alias que yo quiera, le pegue el mismo nombre que la tavle
+        as: "entrada",
+         // clave foranea como esta en el modelo
+        foreignKey: "evento_id"
+      });
 
     }
   

@@ -21,21 +21,25 @@ const pathProductDb = path.join(__dirname, '../data/eventos.json');
 
 const controller = {
     // Root - Show all products|
+// funciona con base de datos
 index: (req, res) => {
-    const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
-    res.render('products/home',{evento: eventos})
+    // const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
+    // res.render('products/home',{evento: eventos})
 
-		// db.evento.findAll().then((evento) =>{
+		db.evento.findAll().then((evento) =>{
 
-		// 	let listaEventos=[];
+            console.log(evento)
 
-		// 	for (eventos of evento){
-		// 		listaEventos.push(eventos);
-		// 	}
+			let listaEventos=[];
 
-        //     res.render('products/home',{eventos: listaEventos})
+			for (eventos of evento){
+				listaEventos.push(eventos);
+			}
 
-		// });
+            console.log(listaEventos)
+            res.render('products/home',{evento: listaEventos})
+
+		});
 },
 
 perfil: (req, res) => {

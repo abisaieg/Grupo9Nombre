@@ -73,5 +73,14 @@
   "categoria": "infantiles",
   "descipcion": "horror",
   "imagen": "1667602694478_img_.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "evil dead",
+  "precio": "12",
+  "fecha": "2022-11-23",
+  "categoria": "musica",
+  "descipcion": "ss",
+  "imagen": "1669175264481_img_.jpg"
  }
 ]

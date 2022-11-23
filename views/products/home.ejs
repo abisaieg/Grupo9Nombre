@@ -47,13 +47,13 @@
     <h3 class="categoria-title">Conciertos:</h3>
     <div class="tarjetas">
       <% evento.forEach(element => { %>
-        <% if (element.categoria == "musica") { %>
+        <% if (element.tipo_evento_id == "1") { %>
           <a href="/products/descripcion/<%= element.id %>">
             <div class="card shadow" >
               <img class="card-img-top" src="images/uploads/<%= element.imagen %>"Card image cap">
               <div class="card-body">
                 <h5 class="card-title"> <%= element.nombre %>  </h5>
-                <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+                <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha_evento %> </p>
               </div>
             </div>
           </a>
@@ -64,13 +64,13 @@
   <h3 class="categoria-title" id="teatro">Teatro:</h3>
   <div class="tarjetas">
     <% evento.forEach(element => { %>
-      <% if (element.categoria == "teatro") { %>
+      <% if (element.tipo_evento_id == "2") { %>
         <a href="/products/descripcion/<%= element.id %>">
           <div class="card shadow" >
             <img class="card-img-top" src="images/uploads/<%= element.imagen %>"Card image cap">
             <div class="card-body">
               <h5 class="card-title"> <%= element.nombre %>  </h5>
-              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+              <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha_evento %> </p>
             </div>
           </div>
         </a>
@@ -80,13 +80,13 @@
 <h3 class="categoria-title" id="deportes">Deportes:</h3>
 <div class="tarjetas">
   <% evento.forEach(element => { %>
-    <% if (element.categoria == "deporte") { %>
+    <% if (element.tipo_evento_id == "3") { %>
       <a href="/products/descripcion/<%= element.id %>">
         <div class="card shadow" >
           <img class="card-img-top" src="images/uploads/<%= element.imagen %>"Card image cap">
           <div class="card-body">
             <h5 class="card-title"> <%= element.nombre %>  </h5>
-            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha %> </p>
+            <p class="card-text"><i class="bi bi-calendar4-event p-1"></i> <%= element.fecha_evento %> </p>
           </div>
         </div>
       </a>
