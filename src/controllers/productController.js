@@ -9,7 +9,7 @@ const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 
 
 const controller = {
-	// funciona con base de datos
+	// FUNCIONA CON DB
 	vistaListadoProd: (req, res) => {
 		// const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
 		// res.render('products/home',{evento: eventos})
@@ -31,31 +31,56 @@ const controller = {
 	vistaCrearProd: (req, res) => {
 		res.render('products/crear')
 	},
+	// FUNCIONA CON DB
 	// aca le pasamos un evento a la vista descripcion producto
 	vistaDetalleProd: (req, res) => {
 		let idURL = req.params.id;
 		let productoEncontrado;
 
-		for (let p of eventos){
-			if (p.id==idURL){
-				productoEncontrado=p;
-				break;
-			}
-		}
+		db.evento.findAll().then((evento) =>{
 
-		res.render('products/descripcionproducto',{productoDetalle: productoEncontrado});
+			let listaEventos=[];
+
+			for (eventosbd of evento){
+				listaEventos.push(eventosbd);
+			}
+			for(let i=0;i<listaEventos.length;i++){
+				if(listaEventos[i].tipo_evento_id==idURL){
+					productoEncontrado=listaEventos[i]
+
+				}
+			}
+
+			res.render('products/descripcionproducto',{productoDetalle: productoEncontrado});
+
+		});
+
+	
 	},
+	// FUNCIONA CON DB
 	vistaEditarProd: (req, res) => {
 		let id = req.params.id;
 		let productoEncontrado;
 
-		for (let s of eventos){
-			if (id==s.id){
-				productoEncontrado=s;
-			}
-		}
+		db.evento.findAll().then((evento) =>{
 
-		res.render('products/editar',{ProductoaEditar: productoEncontrado});
+			let listaEventos=[];
+
+			for (eventosbd of evento){
+				listaEventos.push(eventosbd);
+			}
+			for(let i=0;i<listaEventos.length;i++){
+				if(listaEventos[i].tipo_evento_id==id){
+					productoEncontrado=listaEventos[i]
+
+				}
+			}
+
+			res.render('products/editar',{ProductoaEditar: productoEncontrado});
+
+		});
+
+		
 	},
 
 	// accion guardar objeto nuevo en array
