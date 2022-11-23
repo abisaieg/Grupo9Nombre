@@ -83,36 +83,26 @@ const controller = {
 		
 	},
 
+	// FUNCIONA CON DB
 	// accion guardar objeto nuevo en array
 	accionGuardar: (req, res) => {
-		idNuevo=0;
 
-		for (let s of eventos){
-			if (idNuevo<s.id){
-				idNuevo=s.id;
-			}
-		}
-
-		idNuevo++;
-
-		// req.file.filename  trae el nombre de la imagen y guarda en una variable
 		let nombreImagen = req.file.filename;
+		db.evento.create(
+			{ 
+				id: req.body.title,
+				nombre: req.body.name ,
+				fecha: req.body.date, 
+				length: req.body.length,
+				categoria: req.body.category,
+				descipcion: req.body.description,
+				imagen: nombreImagen
+			}
+			)
+			.then((resultados)  => { 
+				res.redirect('/');
+			 });
 
-		let productoNuevo =  {
-			id: idNuevo,
-			nombre: req.body.name ,
-			precio: req.body.price,
-			fecha: req.body.date, 
-			categoria: req.body.category,
-			descipcion: req.body.description,
-			imagen: nombreImagen
-		};
-
-		eventos.push(productoNuevo);
-
-		fs.writeFileSync(pathProductDb, JSON.stringify(eventos,null,' '));
-
-		res.redirect('/');
 	},
 
 
