@@ -1,7 +1,7 @@
 // arrancar el proyecto
 // 1-npm install
 // 2-npm install multer (MULTER)
-// 3 instalar npm install bcryptjs(HASHING, encriptar claves)
+// 3 npm install bcryptjs(HASHING, encriptar claves)
 // 4 npm install express-validator (express validator)
 // 5 npm install sequelize-cli 
 // 6 npm install sequelize

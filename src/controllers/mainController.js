@@ -21,7 +21,7 @@ const pathProductDb = path.join(__dirname, '../data/eventos.json');
 
 const controller = {
     // Root - Show all products|
-// funciona con base de datos
+// FUNCIONA CON DB
 index: (req, res) => {
     // const eventos = JSON.parse(fs.readFileSync(pathProductDb, 'utf-8'));
     // res.render('products/home',{evento: eventos})
@@ -46,10 +46,12 @@ perfil: (req, res) => {
     res.render('accounts/perfil',{usuario: usuarios})
 },
 
+// NO NECESITA DB
 vistaCrearUsuario: (req, res) => {
     res.render('accounts/registrarse')
 },
 
+// falta conectar con db
 accionGuardar: (req, res) => {
     idNuevo=0;
 
@@ -85,10 +87,12 @@ accionGuardar: (req, res) => {
     res.redirect('/');
 },
 
+// NO NECESITA DB
 login: (req, res) => {
     res.render('accounts/login');
 },
 
+// falta conectar con db
 loginValidator: (req, res) => {
 
     // cuardo el array de validaciones

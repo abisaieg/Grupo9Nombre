@@ -57,7 +57,7 @@ const controller = {
 
 	
 	},
-	// FUNCIONA CON DB
+	// FUNCIONA CON DB 
 	vistaEditarProd: (req, res) => {
 		let id = req.params.id;
 		let productoEncontrado;
@@ -105,7 +105,7 @@ const controller = {
 
 	},
 
-
+	// falta conectar a la db
 	accionEditar: (req, res) => {
 		let id = req.params.id;
 		if (req.file == null) {
@@ -142,6 +142,7 @@ const controller = {
 
 	},
 
+	// falta conectar a la db
 	accionEliminar: (req, res) => {
 
 		let id = req.params.id;
