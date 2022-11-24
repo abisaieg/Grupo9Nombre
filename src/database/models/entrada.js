@@ -13,7 +13,7 @@ function entradaData(sequelize, Datatypes){
       precio : { type: Datatypes.FLOAT},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false, tableName:"Entrada"}; 
+    let cg = {camelCase: false, timestamps: false, tableName:"Entrada",freezeTableName: true}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 

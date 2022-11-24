@@ -20,7 +20,7 @@ function eventoData(sequelize, Datatypes){
       ciudad_id: { type: Datatypes.INTEGER},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false, tableName:"Evento"}; 
+    let cg = {camelCase: false, timestamps: false, tableName:"Evento",freezeTableName: true}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 

@@ -11,7 +11,7 @@ function sectorData(sequelize, Datatypes){
       nombre: {type: Datatypes.STRING(30)},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false,tableName:"Sector"}; 
+    let cg = {camelCase: false, timestamps: false,tableName:"Sector",freezeTableName: true}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 

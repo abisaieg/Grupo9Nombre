@@ -15,7 +15,7 @@ function usuarioData(sequelize, Datatypes){
       admin: {type: Datatypes.BOOLEAN},
     }
     // esto lo dejamos asi por defecto, son congif de sequalize
-    let cg = {camelCase: false, timestamps: false,tableName:"Usuario"}; 
+    let cg = {camelCase: false, timestamps: false,tableName:"Usuario",freezeTableName: true}; 
   
     // aca declaro una variable, con el metodo sequalize.define le paso las 3 variables y el resultdo lo guardo
     // en la variable peliculas 
